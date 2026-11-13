@@ -1,0 +1,9 @@
+description = "PRCC: 1000 Latin-hypercube samples, uniform +-25 % around the fit-A optimum, 8 parameters"
+type = "cases"
+base = "fitA"
+
+[lhs]
+n      = 1000
+seed   = 20261105
+rel    = [0.75, 1.25]
+params = ["v0", "fvimm", "r0", "b", "nata", "rmin", "n0", "tc"]   # frimm follows fvimm

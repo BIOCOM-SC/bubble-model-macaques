@@ -1,0 +1,19 @@
+description = "In-silico experiments at the fit-A optimum: control, immunosuppressed, f_imm sweep, segment walls (the t_imm effect is covered by immgrid)"
+type = "cases"
+base = "fitA"
+
+[[case]]
+name = "control"
+
+[[case]]
+name = "immunosuppressed"
+params = { fvimm = 1 }                  # frimm follows (tied)
+
+[[case]]
+name = "dseg"
+domain = "segment"                      # lesions limited by segment walls (-dseg)
+
+[[sweep]]
+name  = "fimm"
+param = "fvimm"                         # frimm follows (tied)
+linspace = ["base", 1.0, 20]

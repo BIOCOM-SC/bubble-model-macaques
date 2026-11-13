@@ -1,0 +1,4 @@
+# family sweep_b: sweeps, parameter b
+NFAM = 20
+array FF[20] = ["curves/sweeps/sweep_b_01.dat", "curves/sweeps/sweep_b_02.dat", "curves/sweeps/sweep_b_03.dat", "curves/sweeps/sweep_b_04.dat", "curves/sweeps/sweep_b_05.dat", "curves/sweeps/sweep_b_06.dat", "curves/sweeps/sweep_b_07.dat", "curves/sweeps/sweep_b_08.dat", "curves/sweeps/sweep_b_09.dat", "curves/sweeps/sweep_b_10.dat", "curves/sweeps/sweep_b_11.dat", "curves/sweeps/sweep_b_12.dat", "curves/sweeps/sweep_b_13.dat", "curves/sweeps/sweep_b_14.dat", "curves/sweeps/sweep_b_15.dat", "curves/sweeps/sweep_b_16.dat", "curves/sweeps/sweep_b_17.dat", "curves/sweeps/sweep_b_18.dat", "curves/sweeps/sweep_b_19.dat", "curves/sweeps/sweep_b_20.dat"]
+array FV[20] = [0.086625, 0.0896645, 0.0927039, 0.0957434, 0.0987829, 0.101822, 0.104862, 0.107901, 0.110941, 0.11398, 0.11702, 0.120059, 0.123099, 0.126138, 0.129178, 0.132217, 0.135257, 0.138296, 0.141336, 0.144375]

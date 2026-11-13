@@ -1,0 +1,42 @@
+# Defaults shared by all runs (each configs/<name>.toml is merged over this file; tables merge).
+targets = "data/processed/experimental_results.txt"   # targets (data/process.py)
+n_sims  = 10000                                        # simulations per evaluation
+domain  = "lobe"                                       # "lobe" (-dlobe) | "segment" (-dseg)
+
+# Model parameters (config/params_bm.txt). Non-fitted values: Table 3 of the paper. The values
+# of the fitted parameters here are placeholders: fits replace them (Dakota), case sets take the
+# fit-A optimum (base = "fitA").
+[defaults]
+v0       = 1.030247
+fvimm    = 0.146296
+r0       = 7.299726
+fr0dev   = 0.2
+frimm    = 0.146296
+frimmdev = 0.2
+b        = 0.088323
+nata     = 0.197222
+f        = 1
+tmax     = 80
+dt       = 0.1
+n        = 1.63
+a        = 0.035
+rmin     = 0.07
+n0       = 18.296296
+fndev    = 0.2
+tc       = 37.522862
+ftcdev   = 0
+tmin     = 7
+
+# Tied parameters follow their source unless a run sets them explicitly.
+[tied]
+frimm = "fvimm"     # one immune factor on growth speed and on maximum radius
+
+# `--test` / `launch.py submit test`: small version of each run
+[test]
+n_sims    = 500
+max_evals = 3
+max_cases = 3
+refine_per_search = 2
+refine_reps = 2
+starts      = 2
+global_evals = 3   # fits: evaluations of the global search

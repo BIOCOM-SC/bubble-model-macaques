@@ -1,0 +1,3076 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ../out/ridv_heatmap.eps
+%%Creator: gnuplot 6.0 patchlevel 5
+%%CreationDate: Fri Nov 13 10:12:46 2026
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 366 222
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -40 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 366 50 lineto 366 222 lineto 50 222 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.2 (Dec 2017)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto closepath gsave fill grestore stroke} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/Metrics {ExtendTextBox Gswidth} def
+/Lwidth {currentpoint stroke M 0 vshift R Metrics} def
+/Rwidth {currentpoint stroke M dup stringwidth pop neg vshift R Metrics} def
+/Cwidth {currentpoint stroke M dup stringwidth pop -2 div vshift R Metrics} def
+/GLwidth {currentpoint stroke M 0 vshift R {ExtendTextBox} forall} def
+/GRwidth {currentpoint stroke M dup Gwidth vshift R {ExtendTextBox} forall} def
+/GCwidth {currentpoint stroke M dup Gwidth 2 div vshift R {ExtendTextBox} forall} def
+/GLwidth2 {0 Gwidth AddGlyphWidth} def
+/GRwidth2 {Gwidth -1 mul 0 AddGlyphWidth} def
+/GCwidth2 {Gwidth 2 div dup -1 mul AddGlyphWidth} def
+/AddGlyphWidth { dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+                 dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse } def
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {Metrics pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get Gswidth pop -2 div
+     dup 0 R} {dup 6 get Gswidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (../out/ridv_heatmap.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 6.0 patchlevel 5)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Fri Nov 13 10:12:46 2026)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt Sep 2016
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { dup type /stringtype eq
+    { Boxing { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if }
+    {} ifelse} def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PL PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 120 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 6336.00 3456.00 BoxColFill} if
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB} {ColorSpace (CMY) eq
+  {CMY2RGB} if} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1667 .3333 .5 .6667 .8333 1 ] def
+/RedA [0 .2 .6 .7686 .9412 1 .7333 ] def
+/GreenA [.2 .4667 .6667 .7686 .6039 .2667 0 ] def
+/BlueA [.6667 1 1 .7686 .3608 .0824 .0275 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+570 1000 M
+-63 0 V
+stroke
+435 1000 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.2)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+/vshift -40 def
+1.000 UL
+LTb
+LCb setrgbcolor
+570 1475 M
+-63 0 V
+stroke
+435 1475 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.4)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+570 1950 M
+-63 0 V
+stroke
+435 1950 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.6)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+570 2425 M
+-63 0 V
+stroke
+435 2425 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.8)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+570 2900 M
+-63 0 V
+stroke
+435 2900 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 1)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+609 691 M
+0 -63 V
+stroke
+609 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1000 691 M
+0 -63 V
+stroke
+1000 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 10)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1391 691 M
+0 -63 V
+stroke
+1391 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 20)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1782 691 M
+0 -63 V
+stroke
+1782 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 30)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2172 691 M
+0 -63 V
+stroke
+2172 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 40)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+570 2971 N
+570 691 L
+1837 0 V
+0 2280 V
+-1837 0 V
+Z stroke
+1.000 UP
+LCb setrgbcolor
+19 3176 M
+[ [(Helvetica-Bold) 140.0 0.0 true true 0 (A)]
+] -46.7 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LTb
+0 g .8523 g 1.000 590 703 40 120 BoxColFill
+.8353 g 1.000 590 822 40 119 BoxColFill
+.8311 g 1.000 590 940 40 120 BoxColFill
+.8163 g 1.000 590 1059 40 120 BoxColFill
+.7816 g 1.000 590 1178 40 120 BoxColFill
+.7245 g 1.000 590 1297 40 119 BoxColFill
+.667 g 1.000 590 1415 40 120 BoxColFill
+.6381 g 1.000 590 1534 40 120 BoxColFill
+.6166 g 1.000 590 1653 40 120 BoxColFill
+.5818 g 1.000 590 1772 40 119 BoxColFill
+.5411 g 1.000 590 1890 40 120 BoxColFill
+.5379 g 1.000 590 2009 40 120 BoxColFill
+.5913 g 1.000 590 2128 40 120 BoxColFill
+.6754 g 1.000 590 2247 40 119 BoxColFill
+.7638 g 1.000 590 2365 40 120 BoxColFill
+.8393 g 1.000 590 2484 40 120 BoxColFill
+.8994 g 1.000 590 2603 40 120 BoxColFill
+.9487 g 1.000 590 2722 40 119 BoxColFill
+1 g 1.000 590 2840 40 120 BoxColFill
+.8523 g 1.000 629 703 40 120 BoxColFill
+.8353 g 1.000 629 822 40 119 BoxColFill
+.8311 g 1.000 629 940 40 120 BoxColFill
+.8163 g 1.000 629 1059 40 120 BoxColFill
+.7813 g 1.000 629 1178 40 120 BoxColFill
+.7251 g 1.000 629 1297 40 119 BoxColFill
+.6675 g 1.000 629 1415 40 120 BoxColFill
+.6383 g 1.000 629 1534 40 120 BoxColFill
+.6191 g 1.000 629 1653 40 120 BoxColFill
+.5811 g 1.000 629 1772 40 119 BoxColFill
+.542 g 1.000 629 1890 40 120 BoxColFill
+.5379 g 1.000 629 2009 40 120 BoxColFill
+.5964 g 1.000 629 2128 40 120 BoxColFill
+.6754 g 1.000 629 2247 40 119 BoxColFill
+.7623 g 1.000 629 2365 40 120 BoxColFill
+.84 g 1.000 629 2484 40 120 BoxColFill
+.8957 g 1.000 629 2603 40 120 BoxColFill
+.9467 g 1.000 629 2722 40 119 BoxColFill
+.9943 g 1.000 629 2840 40 120 BoxColFill
+.8522 g 1.000 668 703 40 120 BoxColFill
+.8352 g 1.000 668 822 40 119 BoxColFill
+.8309 g 1.000 668 940 40 120 BoxColFill
+.8162 g 1.000 668 1059 40 120 BoxColFill
+.7814 g 1.000 668 1178 40 120 BoxColFill
+.7246 g 1.000 668 1297 40 119 BoxColFill
+.6672 g 1.000 668 1415 40 120 BoxColFill
+.6377 g 1.000 668 1534 40 120 BoxColFill
+.6172 g 1.000 668 1653 40 120 BoxColFill
+.5823 g 1.000 668 1772 40 119 BoxColFill
+.5423 g 1.000 668 1890 40 120 BoxColFill
+.536 g 1.000 668 2009 40 120 BoxColFill
+.5932 g 1.000 668 2128 40 120 BoxColFill
+.6769 g 1.000 668 2247 40 119 BoxColFill
+.7577 g 1.000 668 2365 40 120 BoxColFill
+.8389 g 1.000 668 2484 40 120 BoxColFill
+.8915 g 1.000 668 2603 40 120 BoxColFill
+.9475 g 1.000 668 2722 40 119 BoxColFill
+.9853 g 1.000 668 2840 40 120 BoxColFill
+.8523 g 1.000 707 703 40 120 BoxColFill
+.8353 g 1.000 707 822 40 119 BoxColFill
+.831 g 1.000 707 940 40 120 BoxColFill
+.8163 g 1.000 707 1059 40 120 BoxColFill
+.7812 g 1.000 707 1178 40 120 BoxColFill
+.7241 g 1.000 707 1297 40 119 BoxColFill
+.6673 g 1.000 707 1415 40 120 BoxColFill
+.6379 g 1.000 707 1534 40 120 BoxColFill
+.6163 g 1.000 707 1653 40 120 BoxColFill
+.5819 g 1.000 707 1772 40 119 BoxColFill
+.5406 g 1.000 707 1890 40 120 BoxColFill
+.5364 g 1.000 707 2009 40 120 BoxColFill
+.5894 g 1.000 707 2128 40 120 BoxColFill
+.6719 g 1.000 707 2247 40 119 BoxColFill
+.7698 g 1.000 707 2365 40 120 BoxColFill
+.8383 g 1.000 707 2484 40 120 BoxColFill
+.8945 g 1.000 707 2603 40 120 BoxColFill
+.9519 g 1.000 707 2722 40 119 BoxColFill
+.9987 g 1.000 707 2840 40 120 BoxColFill
+.8523 g 1.000 746 703 40 120 BoxColFill
+.8353 g 1.000 746 822 40 119 BoxColFill
+.831 g 1.000 746 940 40 120 BoxColFill
+.8164 g 1.000 746 1059 40 120 BoxColFill
+.7818 g 1.000 746 1178 40 120 BoxColFill
+.7254 g 1.000 746 1297 40 119 BoxColFill
+.6674 g 1.000 746 1415 40 120 BoxColFill
+.6381 g 1.000 746 1534 40 120 BoxColFill
+.6161 g 1.000 746 1653 40 120 BoxColFill
+.5801 g 1.000 746 1772 40 119 BoxColFill
+.5429 g 1.000 746 1890 40 120 BoxColFill
+.5355 g 1.000 746 2009 40 120 BoxColFill
+.5939 g 1.000 746 2128 40 120 BoxColFill
+.6801 g 1.000 746 2247 40 119 BoxColFill
+.7616 g 1.000 746 2365 40 120 BoxColFill
+.8339 g 1.000 746 2484 40 120 BoxColFill
+.8977 g 1.000 746 2603 40 120 BoxColFill
+.9491 g 1.000 746 2722 40 119 BoxColFill
+.99 g 1.000 746 2840 40 120 BoxColFill
+.8523 g 1.000 785 703 40 120 BoxColFill
+.8353 g 1.000 785 822 40 119 BoxColFill
+.831 g 1.000 785 940 40 120 BoxColFill
+.8164 g 1.000 785 1059 40 120 BoxColFill
+.7819 g 1.000 785 1178 40 120 BoxColFill
+.7244 g 1.000 785 1297 40 119 BoxColFill
+.6671 g 1.000 785 1415 40 120 BoxColFill
+.6369 g 1.000 785 1534 40 120 BoxColFill
+.6169 g 1.000 785 1653 40 120 BoxColFill
+.5798 g 1.000 785 1772 40 119 BoxColFill
+.5414 g 1.000 785 1890 40 120 BoxColFill
+.5376 g 1.000 785 2009 40 120 BoxColFill
+.5885 g 1.000 785 2128 40 120 BoxColFill
+.6726 g 1.000 785 2247 40 119 BoxColFill
+.7625 g 1.000 785 2365 40 120 BoxColFill
+.8385 g 1.000 785 2484 40 120 BoxColFill
+.9036 g 1.000 785 2603 40 120 BoxColFill
+.9501 g 1.000 785 2722 40 119 BoxColFill
+.9879 g 1.000 785 2840 40 120 BoxColFill
+.8523 g 1.000 824 703 40 120 BoxColFill
+.8353 g 1.000 824 822 40 119 BoxColFill
+.831 g 1.000 824 940 40 120 BoxColFill
+.8164 g 1.000 824 1059 40 120 BoxColFill
+.7821 g 1.000 824 1178 40 120 BoxColFill
+.7246 g 1.000 824 1297 40 119 BoxColFill
+.6676 g 1.000 824 1415 40 120 BoxColFill
+.6381 g 1.000 824 1534 40 120 BoxColFill
+.618 g 1.000 824 1653 40 120 BoxColFill
+.5817 g 1.000 824 1772 40 119 BoxColFill
+.5404 g 1.000 824 1890 40 120 BoxColFill
+.536 g 1.000 824 2009 40 120 BoxColFill
+.5941 g 1.000 824 2128 40 120 BoxColFill
+.6718 g 1.000 824 2247 40 119 BoxColFill
+.7613 g 1.000 824 2365 40 120 BoxColFill
+.836 g 1.000 824 2484 40 120 BoxColFill
+.8987 g 1.000 824 2603 40 120 BoxColFill
+.953 g 1.000 824 2722 40 119 BoxColFill
+.9977 g 1.000 824 2840 40 120 BoxColFill
+.852 g 1.000 863 703 40 120 BoxColFill
+.8349 g 1.000 863 822 40 119 BoxColFill
+.8304 g 1.000 863 940 40 120 BoxColFill
+.8152 g 1.000 863 1059 40 120 BoxColFill
+.7799 g 1.000 863 1178 40 120 BoxColFill
+.7221 g 1.000 863 1297 40 119 BoxColFill
+.6664 g 1.000 863 1415 40 120 BoxColFill
+.6374 g 1.000 863 1534 40 120 BoxColFill
+.6176 g 1.000 863 1653 40 120 BoxColFill
+.5838 g 1.000 863 1772 40 119 BoxColFill
+.5411 g 1.000 863 1890 40 120 BoxColFill
+.5358 g 1.000 863 2009 40 120 BoxColFill
+.5892 g 1.000 863 2128 40 120 BoxColFill
+.678 g 1.000 863 2247 40 119 BoxColFill
+.7682 g 1.000 863 2365 40 120 BoxColFill
+.8393 g 1.000 863 2484 40 120 BoxColFill
+.8945 g 1.000 863 2603 40 120 BoxColFill
+.9475 g 1.000 863 2722 40 119 BoxColFill
+.9898 g 1.000 863 2840 40 120 BoxColFill
+.8466 g 1.000 902 703 40 120 BoxColFill
+.8303 g 1.000 902 822 40 119 BoxColFill
+.8247 g 1.000 902 940 40 120 BoxColFill
+.8039 g 1.000 902 1059 40 120 BoxColFill
+.7607 g 1.000 902 1178 40 120 BoxColFill
+.6993 g 1.000 902 1297 40 119 BoxColFill
+.6551 g 1.000 902 1415 40 120 BoxColFill
+.6391 g 1.000 902 1534 40 120 BoxColFill
+.6214 g 1.000 902 1653 40 120 BoxColFill
+.5834 g 1.000 902 1772 40 119 BoxColFill
+.5459 g 1.000 902 1890 40 120 BoxColFill
+.5499 g 1.000 902 2009 40 120 BoxColFill
+.6041 g 1.000 902 2128 40 120 BoxColFill
+.6852 g 1.000 902 2247 40 119 BoxColFill
+.7663 g 1.000 902 2365 40 120 BoxColFill
+.8393 g 1.000 902 2484 40 120 BoxColFill
+.8894 g 1.000 902 2603 40 120 BoxColFill
+.9396 g 1.000 902 2722 40 119 BoxColFill
+.9798 g 1.000 902 2840 40 120 BoxColFill
+.8342 g 1.000 941 703 40 120 BoxColFill
+.8205 g 1.000 941 822 40 119 BoxColFill
+.8099 g 1.000 941 940 40 120 BoxColFill
+.7841 g 1.000 941 1059 40 120 BoxColFill
+.7416 g 1.000 941 1178 40 120 BoxColFill
+.688 g 1.000 941 1297 40 119 BoxColFill
+.6551 g 1.000 941 1415 40 120 BoxColFill
+.6466 g 1.000 941 1534 40 120 BoxColFill
+.6287 g 1.000 941 1653 40 120 BoxColFill
+.5869 g 1.000 941 1772 40 119 BoxColFill
+.5525 g 1.000 941 1890 40 120 BoxColFill
+.5565 g 1.000 941 2009 40 120 BoxColFill
+.6082 g 1.000 941 2128 40 120 BoxColFill
+.6954 g 1.000 941 2247 40 119 BoxColFill
+.7642 g 1.000 941 2365 40 120 BoxColFill
+.8363 g 1.000 941 2484 40 120 BoxColFill
+.8879 g 1.000 941 2603 40 120 BoxColFill
+.9308 g 1.000 941 2722 40 119 BoxColFill
+.9768 g 1.000 941 2840 40 120 BoxColFill
+.7391 g 1.000 980 703 40 120 BoxColFill
+.6977 g 1.000 980 822 40 119 BoxColFill
+.6861 g 1.000 980 940 40 120 BoxColFill
+.6552 g 1.000 980 1059 40 120 BoxColFill
+.6159 g 1.000 980 1178 40 120 BoxColFill
+.6049 g 1.000 980 1297 40 119 BoxColFill
+.6315 g 1.000 980 1415 40 120 BoxColFill
+.6393 g 1.000 980 1534 40 120 BoxColFill
+.6176 g 1.000 980 1653 40 120 BoxColFill
+.5772 g 1.000 980 1772 40 119 BoxColFill
+.5596 g 1.000 980 1890 40 120 BoxColFill
+.5851 g 1.000 980 2009 40 120 BoxColFill
+.6571 g 1.000 980 2128 40 120 BoxColFill
+.7173 g 1.000 980 2247 40 119 BoxColFill
+.7861 g 1.000 980 2365 40 120 BoxColFill
+.8443 g 1.000 980 2484 40 120 BoxColFill
+.8903 g 1.000 980 2603 40 120 BoxColFill
+.9345 g 1.000 980 2722 40 119 BoxColFill
+.9667 g 1.000 980 2840 40 120 BoxColFill
+.724 g 1.000 1019 703 41 120 BoxColFill
+.6769 g 1.000 1019 822 41 119 BoxColFill
+.6636 g 1.000 1019 940 41 120 BoxColFill
+.6307 g 1.000 1019 1059 41 120 BoxColFill
+.5842 g 1.000 1019 1178 41 120 BoxColFill
+.5708 g 1.000 1019 1297 41 119 BoxColFill
+.6038 g 1.000 1019 1415 41 120 BoxColFill
+.6207 g 1.000 1019 1534 41 120 BoxColFill
+.5954 g 1.000 1019 1653 41 120 BoxColFill
+.566 g 1.000 1019 1772 41 119 BoxColFill
+.5655 g 1.000 1019 1890 41 120 BoxColFill
+.6149 g 1.000 1019 2009 41 120 BoxColFill
+.6859 g 1.000 1019 2128 41 120 BoxColFill
+.7604 g 1.000 1019 2247 41 119 BoxColFill
+.8249 g 1.000 1019 2365 41 120 BoxColFill
+.8779 g 1.000 1019 2484 41 120 BoxColFill
+.9178 g 1.000 1019 2603 41 120 BoxColFill
+.9516 g 1.000 1019 2722 41 119 BoxColFill
+.9869 g 1.000 1019 2840 41 120 BoxColFill
+.7222 g 1.000 1059 703 40 120 BoxColFill
+.6773 g 1.000 1059 822 40 119 BoxColFill
+.6636 g 1.000 1059 940 40 120 BoxColFill
+.6282 g 1.000 1059 1059 40 120 BoxColFill
+.5815 g 1.000 1059 1178 40 120 BoxColFill
+.5678 g 1.000 1059 1297 40 119 BoxColFill
+.5987 g 1.000 1059 1415 40 120 BoxColFill
+.617 g 1.000 1059 1534 40 120 BoxColFill
+.5918 g 1.000 1059 1653 40 120 BoxColFill
+.5588 g 1.000 1059 1772 40 119 BoxColFill
+.561 g 1.000 1059 1890 40 120 BoxColFill
+.612 g 1.000 1059 2009 40 120 BoxColFill
+.6857 g 1.000 1059 2128 40 120 BoxColFill
+.7549 g 1.000 1059 2247 40 119 BoxColFill
+.8258 g 1.000 1059 2365 40 120 BoxColFill
+.8661 g 1.000 1059 2484 40 120 BoxColFill
+.9174 g 1.000 1059 2603 40 120 BoxColFill
+.9503 g 1.000 1059 2722 40 119 BoxColFill
+.9883 g 1.000 1059 2840 40 120 BoxColFill
+.7223 g 1.000 1098 703 40 120 BoxColFill
+.6786 g 1.000 1098 822 40 119 BoxColFill
+.6627 g 1.000 1098 940 40 120 BoxColFill
+.6291 g 1.000 1098 1059 40 120 BoxColFill
+.5808 g 1.000 1098 1178 40 120 BoxColFill
+.5671 g 1.000 1098 1297 40 119 BoxColFill
+.5966 g 1.000 1098 1415 40 120 BoxColFill
+.6133 g 1.000 1098 1534 40 120 BoxColFill
+.5924 g 1.000 1098 1653 40 120 BoxColFill
+.5631 g 1.000 1098 1772 40 119 BoxColFill
+.559 g 1.000 1098 1890 40 120 BoxColFill
+.6062 g 1.000 1098 2009 40 120 BoxColFill
+.6843 g 1.000 1098 2128 40 120 BoxColFill
+.7515 g 1.000 1098 2247 40 119 BoxColFill
+.8168 g 1.000 1098 2365 40 120 BoxColFill
+.8641 g 1.000 1098 2484 40 120 BoxColFill
+.909 g 1.000 1098 2603 40 120 BoxColFill
+.9519 g 1.000 1098 2722 40 119 BoxColFill
+.9816 g 1.000 1098 2840 40 120 BoxColFill
+.7209 g 1.000 1137 703 40 120 BoxColFill
+.6771 g 1.000 1137 822 40 119 BoxColFill
+.663 g 1.000 1137 940 40 120 BoxColFill
+.6285 g 1.000 1137 1059 40 120 BoxColFill
+.5824 g 1.000 1137 1178 40 120 BoxColFill
+.5675 g 1.000 1137 1297 40 119 BoxColFill
+.5985 g 1.000 1137 1415 40 120 BoxColFill
+.6117 g 1.000 1137 1534 40 120 BoxColFill
+.5924 g 1.000 1137 1653 40 120 BoxColFill
+.5581 g 1.000 1137 1772 40 119 BoxColFill
+.5538 g 1.000 1137 1890 40 120 BoxColFill
+.6038 g 1.000 1137 2009 40 120 BoxColFill
+.6831 g 1.000 1137 2128 40 120 BoxColFill
+.7472 g 1.000 1137 2247 40 119 BoxColFill
+.8112 g 1.000 1137 2365 40 120 BoxColFill
+.8632 g 1.000 1137 2484 40 120 BoxColFill
+.9055 g 1.000 1137 2603 40 120 BoxColFill
+.9511 g 1.000 1137 2722 40 119 BoxColFill
+.9811 g 1.000 1137 2840 40 120 BoxColFill
+.7206 g 1.000 1176 703 40 120 BoxColFill
+.6773 g 1.000 1176 822 40 119 BoxColFill
+.6639 g 1.000 1176 940 40 120 BoxColFill
+.6287 g 1.000 1176 1059 40 120 BoxColFill
+.5843 g 1.000 1176 1178 40 120 BoxColFill
+.5662 g 1.000 1176 1297 40 119 BoxColFill
+.5969 g 1.000 1176 1415 40 120 BoxColFill
+.6129 g 1.000 1176 1534 40 120 BoxColFill
+.5945 g 1.000 1176 1653 40 120 BoxColFill
+.5592 g 1.000 1176 1772 40 119 BoxColFill
+.5538 g 1.000 1176 1890 40 120 BoxColFill
+.6026 g 1.000 1176 2009 40 120 BoxColFill
+.6765 g 1.000 1176 2128 40 120 BoxColFill
+.7467 g 1.000 1176 2247 40 119 BoxColFill
+.8076 g 1.000 1176 2365 40 120 BoxColFill
+.8673 g 1.000 1176 2484 40 120 BoxColFill
+.9056 g 1.000 1176 2603 40 120 BoxColFill
+.9388 g 1.000 1176 2722 40 119 BoxColFill
+.9757 g 1.000 1176 2840 40 120 BoxColFill
+.7195 g 1.000 1215 703 40 120 BoxColFill
+.6769 g 1.000 1215 822 40 119 BoxColFill
+.6627 g 1.000 1215 940 40 120 BoxColFill
+.6287 g 1.000 1215 1059 40 120 BoxColFill
+.5824 g 1.000 1215 1178 40 120 BoxColFill
+.5671 g 1.000 1215 1297 40 119 BoxColFill
+.5992 g 1.000 1215 1415 40 120 BoxColFill
+.6117 g 1.000 1215 1534 40 120 BoxColFill
+.5949 g 1.000 1215 1653 40 120 BoxColFill
+.5593 g 1.000 1215 1772 40 119 BoxColFill
+.5555 g 1.000 1215 1890 40 120 BoxColFill
+.6061 g 1.000 1215 2009 40 120 BoxColFill
+.676 g 1.000 1215 2128 40 120 BoxColFill
+.7416 g 1.000 1215 2247 40 119 BoxColFill
+.8099 g 1.000 1215 2365 40 120 BoxColFill
+.8563 g 1.000 1215 2484 40 120 BoxColFill
+.8988 g 1.000 1215 2603 40 120 BoxColFill
+.9436 g 1.000 1215 2722 40 119 BoxColFill
+.9698 g 1.000 1215 2840 40 120 BoxColFill
+.7173 g 1.000 1254 703 40 120 BoxColFill
+.6744 g 1.000 1254 822 40 119 BoxColFill
+.6597 g 1.000 1254 940 40 120 BoxColFill
+.6263 g 1.000 1254 1059 40 120 BoxColFill
+.5803 g 1.000 1254 1178 40 120 BoxColFill
+.5661 g 1.000 1254 1297 40 119 BoxColFill
+.5966 g 1.000 1254 1415 40 120 BoxColFill
+.6132 g 1.000 1254 1534 40 120 BoxColFill
+.5936 g 1.000 1254 1653 40 120 BoxColFill
+.5649 g 1.000 1254 1772 40 119 BoxColFill
+.5585 g 1.000 1254 1890 40 120 BoxColFill
+.6075 g 1.000 1254 2009 40 120 BoxColFill
+.6716 g 1.000 1254 2128 40 120 BoxColFill
+.7431 g 1.000 1254 2247 40 119 BoxColFill
+.8034 g 1.000 1254 2365 40 120 BoxColFill
+.8557 g 1.000 1254 2484 40 120 BoxColFill
+.8989 g 1.000 1254 2603 40 120 BoxColFill
+.9325 g 1.000 1254 2722 40 119 BoxColFill
+.9697 g 1.000 1254 2840 40 120 BoxColFill
+.7107 g 1.000 1293 703 40 120 BoxColFill
+.666 g 1.000 1293 822 40 119 BoxColFill
+.6506 g 1.000 1293 940 40 120 BoxColFill
+.617 g 1.000 1293 1059 40 120 BoxColFill
+.5704 g 1.000 1293 1178 40 120 BoxColFill
+.562 g 1.000 1293 1297 40 119 BoxColFill
+.593 g 1.000 1293 1415 40 120 BoxColFill
+.6079 g 1.000 1293 1534 40 120 BoxColFill
+.5928 g 1.000 1293 1653 40 120 BoxColFill
+.5601 g 1.000 1293 1772 40 119 BoxColFill
+.563 g 1.000 1293 1890 40 120 BoxColFill
+.6123 g 1.000 1293 2009 40 120 BoxColFill
+.6826 g 1.000 1293 2128 40 120 BoxColFill
+.7477 g 1.000 1293 2247 40 119 BoxColFill
+.8057 g 1.000 1293 2365 40 120 BoxColFill
+.8598 g 1.000 1293 2484 40 120 BoxColFill
+.9008 g 1.000 1293 2603 40 120 BoxColFill
+.9336 g 1.000 1293 2722 40 119 BoxColFill
+.9638 g 1.000 1293 2840 40 120 BoxColFill
+.6979 g 1.000 1332 703 40 120 BoxColFill
+.6503 g 1.000 1332 822 40 119 BoxColFill
+.6364 g 1.000 1332 940 40 120 BoxColFill
+.5998 g 1.000 1332 1059 40 120 BoxColFill
+.5583 g 1.000 1332 1178 40 120 BoxColFill
+.5591 g 1.000 1332 1297 40 119 BoxColFill
+.594 g 1.000 1332 1415 40 120 BoxColFill
+.6076 g 1.000 1332 1534 40 120 BoxColFill
+.5868 g 1.000 1332 1653 40 120 BoxColFill
+.5542 g 1.000 1332 1772 40 119 BoxColFill
+.5581 g 1.000 1332 1890 40 120 BoxColFill
+.6083 g 1.000 1332 2009 40 120 BoxColFill
+.6857 g 1.000 1332 2128 40 120 BoxColFill
+.7537 g 1.000 1332 2247 40 119 BoxColFill
+.8109 g 1.000 1332 2365 40 120 BoxColFill
+.8576 g 1.000 1332 2484 40 120 BoxColFill
+.898 g 1.000 1332 2603 40 120 BoxColFill
+.931 g 1.000 1332 2722 40 119 BoxColFill
+.9608 g 1.000 1332 2840 40 120 BoxColFill
+.6777 g 1.000 1371 703 40 120 BoxColFill
+.6234 g 1.000 1371 822 40 119 BoxColFill
+.6096 g 1.000 1371 940 40 120 BoxColFill
+.5731 g 1.000 1371 1059 40 120 BoxColFill
+.5401 g 1.000 1371 1178 40 120 BoxColFill
+.5533 g 1.000 1371 1297 40 119 BoxColFill
+.5924 g 1.000 1371 1415 40 120 BoxColFill
+.6019 g 1.000 1371 1534 40 120 BoxColFill
+.5799 g 1.000 1371 1653 40 120 BoxColFill
+.5527 g 1.000 1371 1772 40 119 BoxColFill
+.5631 g 1.000 1371 1890 40 120 BoxColFill
+.6167 g 1.000 1371 2009 40 120 BoxColFill
+.6885 g 1.000 1371 2128 40 120 BoxColFill
+.7558 g 1.000 1371 2247 40 119 BoxColFill
+.8169 g 1.000 1371 2365 40 120 BoxColFill
+.8644 g 1.000 1371 2484 40 120 BoxColFill
+.9072 g 1.000 1371 2603 40 120 BoxColFill
+.9348 g 1.000 1371 2722 40 119 BoxColFill
+.957 g 1.000 1371 2840 40 120 BoxColFill
+.6565 g 1.000 1410 703 40 120 BoxColFill
+.5955 g 1.000 1410 822 40 119 BoxColFill
+.5815 g 1.000 1410 940 40 120 BoxColFill
+.5435 g 1.000 1410 1059 40 120 BoxColFill
+.5162 g 1.000 1410 1178 40 120 BoxColFill
+.5379 g 1.000 1410 1297 40 119 BoxColFill
+.5826 g 1.000 1410 1415 40 120 BoxColFill
+.5909 g 1.000 1410 1534 40 120 BoxColFill
+.5707 g 1.000 1410 1653 40 120 BoxColFill
+.5539 g 1.000 1410 1772 40 119 BoxColFill
+.5809 g 1.000 1410 1890 40 120 BoxColFill
+.6402 g 1.000 1410 2009 40 120 BoxColFill
+.7081 g 1.000 1410 2128 40 120 BoxColFill
+.7679 g 1.000 1410 2247 40 119 BoxColFill
+.8242 g 1.000 1410 2365 40 120 BoxColFill
+.8712 g 1.000 1410 2484 40 120 BoxColFill
+.9086 g 1.000 1410 2603 40 120 BoxColFill
+.9327 g 1.000 1410 2722 40 119 BoxColFill
+.9644 g 1.000 1410 2840 40 120 BoxColFill
+.6371 g 1.000 1449 703 41 120 BoxColFill
+.5681 g 1.000 1449 822 41 119 BoxColFill
+.553 g 1.000 1449 940 41 120 BoxColFill
+.5139 g 1.000 1449 1059 41 120 BoxColFill
+.4928 g 1.000 1449 1178 41 120 BoxColFill
+.5256 g 1.000 1449 1297 41 119 BoxColFill
+.5716 g 1.000 1449 1415 41 120 BoxColFill
+.5851 g 1.000 1449 1534 41 120 BoxColFill
+.5697 g 1.000 1449 1653 41 120 BoxColFill
+.5599 g 1.000 1449 1772 41 119 BoxColFill
+.5888 g 1.000 1449 1890 41 120 BoxColFill
+.65 g 1.000 1449 2009 41 120 BoxColFill
+.7231 g 1.000 1449 2128 41 120 BoxColFill
+.7783 g 1.000 1449 2247 41 119 BoxColFill
+.8365 g 1.000 1449 2365 41 120 BoxColFill
+.8805 g 1.000 1449 2484 41 120 BoxColFill
+.9106 g 1.000 1449 2603 41 120 BoxColFill
+.9454 g 1.000 1449 2722 41 119 BoxColFill
+.9676 g 1.000 1449 2840 41 120 BoxColFill
+.6214 g 1.000 1489 703 40 120 BoxColFill
+.5441 g 1.000 1489 822 40 119 BoxColFill
+.526 g 1.000 1489 940 40 120 BoxColFill
+.4878 g 1.000 1489 1059 40 120 BoxColFill
+.4718 g 1.000 1489 1178 40 120 BoxColFill
+.5103 g 1.000 1489 1297 40 119 BoxColFill
+.5612 g 1.000 1489 1415 40 120 BoxColFill
+.5761 g 1.000 1489 1534 40 120 BoxColFill
+.5658 g 1.000 1489 1653 40 120 BoxColFill
+.5583 g 1.000 1489 1772 40 119 BoxColFill
+.6008 g 1.000 1489 1890 40 120 BoxColFill
+.6659 g 1.000 1489 2009 40 120 BoxColFill
+.7251 g 1.000 1489 2128 40 120 BoxColFill
+.7881 g 1.000 1489 2247 40 119 BoxColFill
+.8418 g 1.000 1489 2365 40 120 BoxColFill
+.8833 g 1.000 1489 2484 40 120 BoxColFill
+.9131 g 1.000 1489 2603 40 120 BoxColFill
+.9454 g 1.000 1489 2722 40 119 BoxColFill
+.9681 g 1.000 1489 2840 40 120 BoxColFill
+.6072 g 1.000 1528 703 40 120 BoxColFill
+.5209 g 1.000 1528 822 40 119 BoxColFill
+.5062 g 1.000 1528 940 40 120 BoxColFill
+.4656 g 1.000 1528 1059 40 120 BoxColFill
+.4528 g 1.000 1528 1178 40 120 BoxColFill
+.5008 g 1.000 1528 1297 40 119 BoxColFill
+.5528 g 1.000 1528 1415 40 120 BoxColFill
+.5756 g 1.000 1528 1534 40 120 BoxColFill
+.5651 g 1.000 1528 1653 40 120 BoxColFill
+.5651 g 1.000 1528 1772 40 119 BoxColFill
+.6058 g 1.000 1528 1890 40 120 BoxColFill
+.6741 g 1.000 1528 2009 40 120 BoxColFill
+.7377 g 1.000 1528 2128 40 120 BoxColFill
+.7945 g 1.000 1528 2247 40 119 BoxColFill
+.8457 g 1.000 1528 2365 40 120 BoxColFill
+.8816 g 1.000 1528 2484 40 120 BoxColFill
+.9151 g 1.000 1528 2603 40 120 BoxColFill
+.9468 g 1.000 1528 2722 40 119 BoxColFill
+.97 g 1.000 1528 2840 40 120 BoxColFill
+.5953 g 1.000 1567 703 40 120 BoxColFill
+.5061 g 1.000 1567 822 40 119 BoxColFill
+.4865 g 1.000 1567 940 40 120 BoxColFill
+.4501 g 1.000 1567 1059 40 120 BoxColFill
+.4397 g 1.000 1567 1178 40 120 BoxColFill
+.4914 g 1.000 1567 1297 40 119 BoxColFill
+.5498 g 1.000 1567 1415 40 120 BoxColFill
+.5699 g 1.000 1567 1534 40 120 BoxColFill
+.5612 g 1.000 1567 1653 40 120 BoxColFill
+.5674 g 1.000 1567 1772 40 119 BoxColFill
+.6145 g 1.000 1567 1890 40 120 BoxColFill
+.6765 g 1.000 1567 2009 40 120 BoxColFill
+.7439 g 1.000 1567 2128 40 120 BoxColFill
+.8001 g 1.000 1567 2247 40 119 BoxColFill
+.8499 g 1.000 1567 2365 40 120 BoxColFill
+.8871 g 1.000 1567 2484 40 120 BoxColFill
+.9147 g 1.000 1567 2603 40 120 BoxColFill
+.9455 g 1.000 1567 2722 40 119 BoxColFill
+.9734 g 1.000 1567 2840 40 120 BoxColFill
+.589 g 1.000 1606 703 40 120 BoxColFill
+.4945 g 1.000 1606 822 40 119 BoxColFill
+.4742 g 1.000 1606 940 40 120 BoxColFill
+.4371 g 1.000 1606 1059 40 120 BoxColFill
+.4305 g 1.000 1606 1178 40 120 BoxColFill
+.4894 g 1.000 1606 1297 40 119 BoxColFill
+.5463 g 1.000 1606 1415 40 120 BoxColFill
+.5655 g 1.000 1606 1534 40 120 BoxColFill
+.5596 g 1.000 1606 1653 40 120 BoxColFill
+.5717 g 1.000 1606 1772 40 119 BoxColFill
+.6167 g 1.000 1606 1890 40 120 BoxColFill
+.6836 g 1.000 1606 2009 40 120 BoxColFill
+.7446 g 1.000 1606 2128 40 120 BoxColFill
+.8096 g 1.000 1606 2247 40 119 BoxColFill
+.8512 g 1.000 1606 2365 40 120 BoxColFill
+.8992 g 1.000 1606 2484 40 120 BoxColFill
+.9256 g 1.000 1606 2603 40 120 BoxColFill
+.9485 g 1.000 1606 2722 40 119 BoxColFill
+.9745 g 1.000 1606 2840 40 120 BoxColFill
+.579 g 1.000 1645 703 40 120 BoxColFill
+.4808 g 1.000 1645 822 40 119 BoxColFill
+.4589 g 1.000 1645 940 40 120 BoxColFill
+.4205 g 1.000 1645 1059 40 120 BoxColFill
+.4223 g 1.000 1645 1178 40 120 BoxColFill
+.4826 g 1.000 1645 1297 40 119 BoxColFill
+.5423 g 1.000 1645 1415 40 120 BoxColFill
+.5663 g 1.000 1645 1534 40 120 BoxColFill
+.556 g 1.000 1645 1653 40 120 BoxColFill
+.5742 g 1.000 1645 1772 40 119 BoxColFill
+.6214 g 1.000 1645 1890 40 120 BoxColFill
+.6905 g 1.000 1645 2009 40 120 BoxColFill
+.7528 g 1.000 1645 2128 40 120 BoxColFill
+.8073 g 1.000 1645 2247 40 119 BoxColFill
+.8572 g 1.000 1645 2365 40 120 BoxColFill
+.893 g 1.000 1645 2484 40 120 BoxColFill
+.9226 g 1.000 1645 2603 40 120 BoxColFill
+.9504 g 1.000 1645 2722 40 119 BoxColFill
+.9792 g 1.000 1645 2840 40 120 BoxColFill
+.5696 g 1.000 1684 703 40 120 BoxColFill
+.4694 g 1.000 1684 822 40 119 BoxColFill
+.4491 g 1.000 1684 940 40 120 BoxColFill
+.4096 g 1.000 1684 1059 40 120 BoxColFill
+.4167 g 1.000 1684 1178 40 120 BoxColFill
+.4809 g 1.000 1684 1297 40 119 BoxColFill
+.5397 g 1.000 1684 1415 40 120 BoxColFill
+.5665 g 1.000 1684 1534 40 120 BoxColFill
+.5597 g 1.000 1684 1653 40 120 BoxColFill
+.5765 g 1.000 1684 1772 40 119 BoxColFill
+.6262 g 1.000 1684 1890 40 120 BoxColFill
+.6981 g 1.000 1684 2009 40 120 BoxColFill
+.7579 g 1.000 1684 2128 40 120 BoxColFill
+.8099 g 1.000 1684 2247 40 119 BoxColFill
+.8579 g 1.000 1684 2365 40 120 BoxColFill
+.8927 g 1.000 1684 2484 40 120 BoxColFill
+.9236 g 1.000 1684 2603 40 120 BoxColFill
+.9508 g 1.000 1684 2722 40 119 BoxColFill
+.9814 g 1.000 1684 2840 40 120 BoxColFill
+.5576 g 1.000 1723 703 40 120 BoxColFill
+.4545 g 1.000 1723 822 40 119 BoxColFill
+.4321 g 1.000 1723 940 40 120 BoxColFill
+.3943 g 1.000 1723 1059 40 120 BoxColFill
+.4099 g 1.000 1723 1178 40 120 BoxColFill
+.4731 g 1.000 1723 1297 40 119 BoxColFill
+.5415 g 1.000 1723 1415 40 120 BoxColFill
+.5636 g 1.000 1723 1534 40 120 BoxColFill
+.563 g 1.000 1723 1653 40 120 BoxColFill
+.5814 g 1.000 1723 1772 40 119 BoxColFill
+.628 g 1.000 1723 1890 40 120 BoxColFill
+.6941 g 1.000 1723 2009 40 120 BoxColFill
+.7604 g 1.000 1723 2128 40 120 BoxColFill
+.8141 g 1.000 1723 2247 40 119 BoxColFill
+.866 g 1.000 1723 2365 40 120 BoxColFill
+.8952 g 1.000 1723 2484 40 120 BoxColFill
+.9254 g 1.000 1723 2603 40 120 BoxColFill
+.9541 g 1.000 1723 2722 40 119 BoxColFill
+.9746 g 1.000 1723 2840 40 120 BoxColFill
+.5425 g 1.000 1762 703 40 120 BoxColFill
+.4262 g 1.000 1762 822 40 119 BoxColFill
+.4129 g 1.000 1762 940 40 120 BoxColFill
+.3742 g 1.000 1762 1059 40 120 BoxColFill
+.4022 g 1.000 1762 1178 40 120 BoxColFill
+.4718 g 1.000 1762 1297 40 119 BoxColFill
+.5335 g 1.000 1762 1415 40 120 BoxColFill
+.5595 g 1.000 1762 1534 40 120 BoxColFill
+.5611 g 1.000 1762 1653 40 120 BoxColFill
+.5846 g 1.000 1762 1772 40 119 BoxColFill
+.642 g 1.000 1762 1890 40 120 BoxColFill
+.7035 g 1.000 1762 2009 40 120 BoxColFill
+.771 g 1.000 1762 2128 40 120 BoxColFill
+.8175 g 1.000 1762 2247 40 119 BoxColFill
+.8634 g 1.000 1762 2365 40 120 BoxColFill
+.8969 g 1.000 1762 2484 40 120 BoxColFill
+.9347 g 1.000 1762 2603 40 120 BoxColFill
+.9554 g 1.000 1762 2722 40 119 BoxColFill
+.9721 g 1.000 1762 2840 40 120 BoxColFill
+.532 g 1.000 1801 703 40 120 BoxColFill
+.4071 g 1.000 1801 822 40 119 BoxColFill
+.3875 g 1.000 1801 940 40 120 BoxColFill
+.3558 g 1.000 1801 1059 40 120 BoxColFill
+.3915 g 1.000 1801 1178 40 120 BoxColFill
+.4699 g 1.000 1801 1297 40 119 BoxColFill
+.5338 g 1.000 1801 1415 40 120 BoxColFill
+.5643 g 1.000 1801 1534 40 120 BoxColFill
+.5668 g 1.000 1801 1653 40 120 BoxColFill
+.5884 g 1.000 1801 1772 40 119 BoxColFill
+.6459 g 1.000 1801 1890 40 120 BoxColFill
+.7077 g 1.000 1801 2009 40 120 BoxColFill
+.7721 g 1.000 1801 2128 40 120 BoxColFill
+.826 g 1.000 1801 2247 40 119 BoxColFill
+.8624 g 1.000 1801 2365 40 120 BoxColFill
+.8991 g 1.000 1801 2484 40 120 BoxColFill
+.9361 g 1.000 1801 2603 40 120 BoxColFill
+.9575 g 1.000 1801 2722 40 119 BoxColFill
+.979 g 1.000 1801 2840 40 120 BoxColFill
+.5114 g 1.000 1840 703 40 120 BoxColFill
+.3726 g 1.000 1840 822 40 119 BoxColFill
+.351 g 1.000 1840 940 40 120 BoxColFill
+.3215 g 1.000 1840 1059 40 120 BoxColFill
+.3781 g 1.000 1840 1178 40 120 BoxColFill
+.4538 g 1.000 1840 1297 40 119 BoxColFill
+.5248 g 1.000 1840 1415 40 120 BoxColFill
+.5579 g 1.000 1840 1534 40 120 BoxColFill
+.5651 g 1.000 1840 1653 40 120 BoxColFill
+.6006 g 1.000 1840 1772 40 119 BoxColFill
+.659 g 1.000 1840 1890 40 120 BoxColFill
+.7236 g 1.000 1840 2009 40 120 BoxColFill
+.7847 g 1.000 1840 2128 40 120 BoxColFill
+.8236 g 1.000 1840 2247 40 119 BoxColFill
+.8714 g 1.000 1840 2365 40 120 BoxColFill
+.9096 g 1.000 1840 2484 40 120 BoxColFill
+.9274 g 1.000 1840 2603 40 120 BoxColFill
+.9639 g 1.000 1840 2722 40 119 BoxColFill
+.9739 g 1.000 1840 2840 40 120 BoxColFill
+.4964 g 1.000 1879 703 40 120 BoxColFill
+.3369 g 1.000 1879 822 40 119 BoxColFill
+.3171 g 1.000 1879 940 40 120 BoxColFill
+.2954 g 1.000 1879 1059 40 120 BoxColFill
+.3559 g 1.000 1879 1178 40 120 BoxColFill
+.447 g 1.000 1879 1297 40 119 BoxColFill
+.5209 g 1.000 1879 1415 40 120 BoxColFill
+.5507 g 1.000 1879 1534 40 120 BoxColFill
+.5699 g 1.000 1879 1653 40 120 BoxColFill
+.604 g 1.000 1879 1772 40 119 BoxColFill
+.6645 g 1.000 1879 1890 40 120 BoxColFill
+.7351 g 1.000 1879 2009 40 120 BoxColFill
+.788 g 1.000 1879 2128 40 120 BoxColFill
+.8339 g 1.000 1879 2247 40 119 BoxColFill
+.8773 g 1.000 1879 2365 40 120 BoxColFill
+.9077 g 1.000 1879 2484 40 120 BoxColFill
+.9384 g 1.000 1879 2603 40 120 BoxColFill
+.9602 g 1.000 1879 2722 40 119 BoxColFill
+.9821 g 1.000 1879 2840 40 120 BoxColFill
+.4752 g 1.000 1918 703 41 120 BoxColFill
+.2835 g 1.000 1918 822 41 119 BoxColFill
+.2759 g 1.000 1918 940 41 120 BoxColFill
+.2542 g 1.000 1918 1059 41 120 BoxColFill
+.3307 g 1.000 1918 1178 41 120 BoxColFill
+.4359 g 1.000 1918 1297 41 119 BoxColFill
+.5089 g 1.000 1918 1415 41 120 BoxColFill
+.5512 g 1.000 1918 1534 41 120 BoxColFill
+.5739 g 1.000 1918 1653 41 120 BoxColFill
+.6135 g 1.000 1918 1772 41 119 BoxColFill
+.6781 g 1.000 1918 1890 41 120 BoxColFill
+.7388 g 1.000 1918 2009 41 120 BoxColFill
+.7996 g 1.000 1918 2128 41 120 BoxColFill
+.8482 g 1.000 1918 2247 41 119 BoxColFill
+.882 g 1.000 1918 2365 41 120 BoxColFill
+.9116 g 1.000 1918 2484 41 120 BoxColFill
+.9383 g 1.000 1918 2603 41 120 BoxColFill
+.9617 g 1.000 1918 2722 41 119 BoxColFill
+.98 g 1.000 1918 2840 41 120 BoxColFill
+.4642 g 1.000 1958 703 40 120 BoxColFill
+.2446 g 1.000 1958 822 40 119 BoxColFill
+.2276 g 1.000 1958 940 40 120 BoxColFill
+.2141 g 1.000 1958 1059 40 120 BoxColFill
+.3156 g 1.000 1958 1178 40 120 BoxColFill
+.428 g 1.000 1958 1297 40 119 BoxColFill
+.507 g 1.000 1958 1415 40 120 BoxColFill
+.5472 g 1.000 1958 1534 40 120 BoxColFill
+.5789 g 1.000 1958 1653 40 120 BoxColFill
+.6204 g 1.000 1958 1772 40 119 BoxColFill
+.6801 g 1.000 1958 1890 40 120 BoxColFill
+.7498 g 1.000 1958 2009 40 120 BoxColFill
+.7982 g 1.000 1958 2128 40 120 BoxColFill
+.8421 g 1.000 1958 2247 40 119 BoxColFill
+.8843 g 1.000 1958 2365 40 120 BoxColFill
+.9186 g 1.000 1958 2484 40 120 BoxColFill
+.9449 g 1.000 1958 2603 40 120 BoxColFill
+.9623 g 1.000 1958 2722 40 119 BoxColFill
+.9801 g 1.000 1958 2840 40 120 BoxColFill
+.4496 g 1.000 1997 703 40 120 BoxColFill
+.2031 g 1.000 1997 822 40 119 BoxColFill
+.1883 g 1.000 1997 940 40 120 BoxColFill
+.183 g 1.000 1997 1059 40 120 BoxColFill
+.2918 g 1.000 1997 1178 40 120 BoxColFill
+.416 g 1.000 1997 1297 40 119 BoxColFill
+.4989 g 1.000 1997 1415 40 120 BoxColFill
+.5469 g 1.000 1997 1534 40 120 BoxColFill
+.583 g 1.000 1997 1653 40 120 BoxColFill
+.6317 g 1.000 1997 1772 40 119 BoxColFill
+.6876 g 1.000 1997 1890 40 120 BoxColFill
+.7483 g 1.000 1997 2009 40 120 BoxColFill
+.8022 g 1.000 1997 2128 40 120 BoxColFill
+.851 g 1.000 1997 2247 40 119 BoxColFill
+.8822 g 1.000 1997 2365 40 120 BoxColFill
+.9177 g 1.000 1997 2484 40 120 BoxColFill
+.9426 g 1.000 1997 2603 40 120 BoxColFill
+.9664 g 1.000 1997 2722 40 119 BoxColFill
+.9841 g 1.000 1997 2840 40 120 BoxColFill
+.4407 g 1.000 2036 703 40 120 BoxColFill
+.1611 g 1.000 2036 822 40 119 BoxColFill
+.1275 g 1.000 2036 940 40 120 BoxColFill
+.1386 g 1.000 2036 1059 40 120 BoxColFill
+.2843 g 1.000 2036 1178 40 120 BoxColFill
+.4125 g 1.000 2036 1297 40 119 BoxColFill
+.4962 g 1.000 2036 1415 40 120 BoxColFill
+.5428 g 1.000 2036 1534 40 120 BoxColFill
+.5821 g 1.000 2036 1653 40 120 BoxColFill
+.6351 g 1.000 2036 1772 40 119 BoxColFill
+.7024 g 1.000 2036 1890 40 120 BoxColFill
+.7589 g 1.000 2036 2009 40 120 BoxColFill
+.8084 g 1.000 2036 2128 40 120 BoxColFill
+.8519 g 1.000 2036 2247 40 119 BoxColFill
+.8915 g 1.000 2036 2365 40 120 BoxColFill
+.9169 g 1.000 2036 2484 40 120 BoxColFill
+.9404 g 1.000 2036 2603 40 120 BoxColFill
+.9656 g 1.000 2036 2722 40 119 BoxColFill
+.9863 g 1.000 2036 2840 40 120 BoxColFill
+.4303 g 1.000 2075 703 40 120 BoxColFill
+.1196 g 1.000 2075 822 40 119 BoxColFill
+.0831 g 1.000 2075 940 40 120 BoxColFill
+.118 g 1.000 2075 1059 40 120 BoxColFill
+.2776 g 1.000 2075 1178 40 120 BoxColFill
+.4046 g 1.000 2075 1297 40 119 BoxColFill
+.491 g 1.000 2075 1415 40 120 BoxColFill
+.5463 g 1.000 2075 1534 40 120 BoxColFill
+.5893 g 1.000 2075 1653 40 120 BoxColFill
+.6396 g 1.000 2075 1772 40 119 BoxColFill
+.703 g 1.000 2075 1890 40 120 BoxColFill
+.7638 g 1.000 2075 2009 40 120 BoxColFill
+.8192 g 1.000 2075 2128 40 120 BoxColFill
+.8593 g 1.000 2075 2247 40 119 BoxColFill
+.8923 g 1.000 2075 2365 40 120 BoxColFill
+.9264 g 1.000 2075 2484 40 120 BoxColFill
+.9476 g 1.000 2075 2603 40 120 BoxColFill
+.9633 g 1.000 2075 2722 40 119 BoxColFill
+.9831 g 1.000 2075 2840 40 120 BoxColFill
+.4206 g 1.000 2114 703 40 120 BoxColFill
+.0942 g 1.000 2114 822 40 119 BoxColFill
+.0368 g 1.000 2114 940 40 120 BoxColFill
+.1073 g 1.000 2114 1059 40 120 BoxColFill
+.2757 g 1.000 2114 1178 40 120 BoxColFill
+.3988 g 1.000 2114 1297 40 119 BoxColFill
+.4923 g 1.000 2114 1415 40 120 BoxColFill
+.5454 g 1.000 2114 1534 40 120 BoxColFill
+.5943 g 1.000 2114 1653 40 120 BoxColFill
+.644 g 1.000 2114 1772 40 119 BoxColFill
+.7117 g 1.000 2114 1890 40 120 BoxColFill
+.771 g 1.000 2114 2009 40 120 BoxColFill
+.8122 g 1.000 2114 2128 40 120 BoxColFill
+.8617 g 1.000 2114 2247 40 119 BoxColFill
+.8927 g 1.000 2114 2365 40 120 BoxColFill
+.9249 g 1.000 2114 2484 40 120 BoxColFill
+.9461 g 1.000 2114 2603 40 120 BoxColFill
+.9713 g 1.000 2114 2722 40 119 BoxColFill
+.9844 g 1.000 2114 2840 40 120 BoxColFill
+.4112 g 1.000 2153 703 40 120 BoxColFill
+.0764 g 1.000 2153 822 40 119 BoxColFill
+.0096 g 1.000 2153 940 40 120 BoxColFill
+.0922 g 1.000 2153 1059 40 120 BoxColFill
+.2655 g 1.000 2153 1178 40 120 BoxColFill
+.3924 g 1.000 2153 1297 40 119 BoxColFill
+.4876 g 1.000 2153 1415 40 120 BoxColFill
+.5466 g 1.000 2153 1534 40 120 BoxColFill
+.5982 g 1.000 2153 1653 40 120 BoxColFill
+.6587 g 1.000 2153 1772 40 119 BoxColFill
+.7146 g 1.000 2153 1890 40 120 BoxColFill
+.7645 g 1.000 2153 2009 40 120 BoxColFill
+.8255 g 1.000 2153 2128 40 120 BoxColFill
+.8624 g 1.000 2153 2247 40 119 BoxColFill
+.9053 g 1.000 2153 2365 40 120 BoxColFill
+.9259 g 1.000 2153 2484 40 120 BoxColFill
+.9505 g 1.000 2153 2603 40 120 BoxColFill
+.9717 g 1.000 2153 2722 40 119 BoxColFill
+.9849 g 1.000 2153 2840 40 120 BoxColFill
+.4029 g 1.000 2192 703 40 120 BoxColFill
+.0763 g 1.000 2192 822 40 119 BoxColFill
+0 g 1.000 2192 940 40 120 BoxColFill
+.0919 g 1.000 2192 1059 40 120 BoxColFill
+.2604 g 1.000 2192 1178 40 120 BoxColFill
+.3977 g 1.000 2192 1297 40 119 BoxColFill
+.4916 g 1.000 2192 1415 40 120 BoxColFill
+.5482 g 1.000 2192 1534 40 120 BoxColFill
+.6004 g 1.000 2192 1653 40 120 BoxColFill
+.656 g 1.000 2192 1772 40 119 BoxColFill
+.7171 g 1.000 2192 1890 40 120 BoxColFill
+.777 g 1.000 2192 2009 40 120 BoxColFill
+.8266 g 1.000 2192 2128 40 120 BoxColFill
+.8719 g 1.000 2192 2247 40 119 BoxColFill
+.8992 g 1.000 2192 2365 40 120 BoxColFill
+.9328 g 1.000 2192 2484 40 120 BoxColFill
+.9512 g 1.000 2192 2603 40 120 BoxColFill
+.9718 g 1.000 2192 2722 40 119 BoxColFill
+.9808 g 1.000 2192 2840 40 120 BoxColFill
+.3942 g 1.000 2231 703 40 120 BoxColFill
+.0885 g 1.000 2231 822 40 119 BoxColFill
+.0092 g 1.000 2231 940 40 120 BoxColFill
+.1164 g 1.000 2231 1059 40 120 BoxColFill
+.2804 g 1.000 2231 1178 40 120 BoxColFill
+.4054 g 1.000 2231 1297 40 119 BoxColFill
+.4943 g 1.000 2231 1415 40 120 BoxColFill
+.5553 g 1.000 2231 1534 40 120 BoxColFill
+.6134 g 1.000 2231 1653 40 120 BoxColFill
+.6664 g 1.000 2231 1772 40 119 BoxColFill
+.7262 g 1.000 2231 1890 40 120 BoxColFill
+.7796 g 1.000 2231 2009 40 120 BoxColFill
+.8364 g 1.000 2231 2128 40 120 BoxColFill
+.874 g 1.000 2231 2247 40 119 BoxColFill
+.8997 g 1.000 2231 2365 40 120 BoxColFill
+.9342 g 1.000 2231 2484 40 120 BoxColFill
+.9504 g 1.000 2231 2603 40 120 BoxColFill
+.9707 g 1.000 2231 2722 40 119 BoxColFill
+.9873 g 1.000 2231 2840 40 120 BoxColFill
+.3939 g 1.000 2270 703 40 120 BoxColFill
+.1351 g 1.000 2270 822 40 119 BoxColFill
+.0599 g 1.000 2270 940 40 120 BoxColFill
+.1442 g 1.000 2270 1059 40 120 BoxColFill
+.2957 g 1.000 2270 1178 40 120 BoxColFill
+.4081 g 1.000 2270 1297 40 119 BoxColFill
+.4943 g 1.000 2270 1415 40 120 BoxColFill
+.5584 g 1.000 2270 1534 40 120 BoxColFill
+.6135 g 1.000 2270 1653 40 120 BoxColFill
+.6756 g 1.000 2270 1772 40 119 BoxColFill
+.7352 g 1.000 2270 1890 40 120 BoxColFill
+.7854 g 1.000 2270 2009 40 120 BoxColFill
+.8315 g 1.000 2270 2128 40 120 BoxColFill
+.8718 g 1.000 2270 2247 40 119 BoxColFill
+.8998 g 1.000 2270 2365 40 120 BoxColFill
+.933 g 1.000 2270 2484 40 120 BoxColFill
+.9505 g 1.000 2270 2603 40 120 BoxColFill
+.9727 g 1.000 2270 2722 40 119 BoxColFill
+.9921 g 1.000 2270 2840 40 120 BoxColFill
+.4007 g 1.000 2309 703 40 120 BoxColFill
+.2117 g 1.000 2309 822 40 119 BoxColFill
+.1075 g 1.000 2309 940 40 120 BoxColFill
+.1732 g 1.000 2309 1059 40 120 BoxColFill
+.31 g 1.000 2309 1178 40 120 BoxColFill
+.4137 g 1.000 2309 1297 40 119 BoxColFill
+.4959 g 1.000 2309 1415 40 120 BoxColFill
+.5647 g 1.000 2309 1534 40 120 BoxColFill
+.6206 g 1.000 2309 1653 40 120 BoxColFill
+.6845 g 1.000 2309 1772 40 119 BoxColFill
+.7424 g 1.000 2309 1890 40 120 BoxColFill
+.7979 g 1.000 2309 2009 40 120 BoxColFill
+.8435 g 1.000 2309 2128 40 120 BoxColFill
+.8756 g 1.000 2309 2247 40 119 BoxColFill
+.9011 g 1.000 2309 2365 40 120 BoxColFill
+.942 g 1.000 2309 2484 40 120 BoxColFill
+.9521 g 1.000 2309 2603 40 120 BoxColFill
+.977 g 1.000 2309 2722 40 119 BoxColFill
+.9878 g 1.000 2309 2840 40 120 BoxColFill
+.4082 g 1.000 2348 703 40 120 BoxColFill
+.2476 g 1.000 2348 822 40 119 BoxColFill
+.1809 g 1.000 2348 940 40 120 BoxColFill
+.2185 g 1.000 2348 1059 40 120 BoxColFill
+.3273 g 1.000 2348 1178 40 120 BoxColFill
+.4232 g 1.000 2348 1297 40 119 BoxColFill
+.5095 g 1.000 2348 1415 40 120 BoxColFill
+.5749 g 1.000 2348 1534 40 120 BoxColFill
+.6306 g 1.000 2348 1653 40 120 BoxColFill
+.6909 g 1.000 2348 1772 40 119 BoxColFill
+.7408 g 1.000 2348 1890 40 120 BoxColFill
+.7959 g 1.000 2348 2009 40 120 BoxColFill
+.8447 g 1.000 2348 2128 40 120 BoxColFill
+.8755 g 1.000 2348 2247 40 119 BoxColFill
+.9142 g 1.000 2348 2365 40 120 BoxColFill
+.9376 g 1.000 2348 2484 40 120 BoxColFill
+.9577 g 1.000 2348 2603 40 120 BoxColFill
+.9797 g 1.000 2348 2722 40 119 BoxColFill
+.9826 g 1.000 2348 2840 40 120 BoxColFill
+% End plot #1
+% Begin plot #2
+2.000 UP
+3.000 UL
+LTb
+0.00 0.00 0.00 C
+2212 1000 Circle
+% End plot #2
+% Begin plot #3
+2.600 UP
+3.000 UL
+LTb
+0.00 0.00 0.00 C
+2208 1014 Star
+% End plot #3
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+570 2971 N
+570 691 L
+1837 0 V
+0 2280 V
+-1837 0 V
+Z stroke
+LCb setrgbcolor
+105 1831 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 120.0 0.0 true true 0 (f)]
+[(Helvetica) 96.0 -36.0 true true 0 (imm)]
+] -28.0 MCshow
+grestore
+/Helvetica findfont 120 scalefont setfont
+LTb
+LCb setrgbcolor
+1488 328 M
+[ [(Helvetica) 120.0 0.0 true true 0 (t)]
+[(Helvetica) 96.0 -36.0 true true 0 (imm)]
+[(Helvetica) 120.0 0.0 true true 0 ( \(days\))]
+] -28.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+LTb
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+1488 3161 M
+[ [(Helvetica-Bold) 130.0 0.0 true true 0 (Unvaccinated \(n=10\))]
+] -43.3 MCshow
+/Helvetica findfont 120 scalefont setfont
+LTb
+grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB} {ColorSpace (CMY) eq
+  {CMY2RGB} if} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1667 .3333 .5 .6667 .8333 1 ] def
+/RedA [0 .2 .6 .7686 .9412 1 .7333 ] def
+/GreenA [.2 .4667 .6667 .7686 .6039 .2667 0 ] def
+/BlueA [.6667 1 1 .7686 .3608 .0824 .0275 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 918 M
+63 0 V
+stroke
+2751 918 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.5)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 1193 M
+63 0 V
+stroke
+2751 1193 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 1)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 1469 M
+63 0 V
+stroke
+2751 1469 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 2)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 1833 M
+63 0 V
+stroke
+2751 1833 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 5)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 2108 M
+63 0 V
+stroke
+2751 2108 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 10)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 2384 M
+63 0 V
+stroke
+2751 2384 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 20)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2616 2748 M
+63 0 V
+stroke
+2751 2748 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 50)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+2502 2971 N
+0 -2280 V
+114 0 V
+0 2280 V
+-114 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LTb
+0 g .025 g 1.000 2502 691 115 115 BoxColFill
+.075 g 1.000 2502 805 115 115 BoxColFill
+.125 g 1.000 2502 919 115 115 BoxColFill
+.175 g 1.000 2502 1033 115 115 BoxColFill
+.225 g 1.000 2502 1147 115 115 BoxColFill
+.275 g 1.000 2502 1261 115 115 BoxColFill
+.325 g 1.000 2502 1375 115 115 BoxColFill
+.375 g 1.000 2502 1489 115 115 BoxColFill
+.425 g 1.000 2502 1603 115 115 BoxColFill
+.475 g 1.000 2502 1717 115 115 BoxColFill
+.525 g 1.000 2502 1831 115 115 BoxColFill
+.575 g 1.000 2502 1945 115 115 BoxColFill
+.625 g 1.000 2502 2059 115 115 BoxColFill
+.675 g 1.000 2502 2173 115 115 BoxColFill
+.725 g 1.000 2502 2287 115 115 BoxColFill
+.775 g 1.000 2502 2401 115 115 BoxColFill
+.825 g 1.000 2502 2515 115 115 BoxColFill
+.875 g 1.000 2502 2629 115 115 BoxColFill
+.925 g 1.000 2502 2743 115 115 BoxColFill
+.975 g 1.000 2502 2857 115 115 BoxColFill
+% End plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+2502 2971 N
+0 -2280 V
+114 0 V
+0 2280 V
+-114 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB} {ColorSpace (CMY) eq
+  {CMY2RGB} if} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1667 .3333 .5 .6667 .8333 1 ] def
+/RedA [0 .2 .6 .7686 .9412 1 .7333 ] def
+/GreenA [.2 .4667 .6667 .7686 .6039 .2667 0 ] def
+/BlueA [.6667 1 1 .7686 .3608 .0824 .0275 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+3738 1000 M
+-63 0 V
+stroke
+3603 1000 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.2)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3738 1475 M
+-63 0 V
+stroke
+3603 1475 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.4)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3738 1950 M
+-63 0 V
+stroke
+3603 1950 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.6)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3738 2425 M
+-63 0 V
+stroke
+3603 2425 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0.8)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3738 2900 M
+-63 0 V
+stroke
+3603 2900 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 1)]
+] -40.0 MRshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3777 691 M
+0 -63 V
+stroke
+3777 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 0)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+4168 691 M
+0 -63 V
+stroke
+4168 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 10)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+4558 691 M
+0 -63 V
+stroke
+4558 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 20)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+4949 691 M
+0 -63 V
+stroke
+4949 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 30)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5340 691 M
+0 -63 V
+stroke
+5340 508 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 40)]
+] -40.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+3738 2971 N
+0 -2280 V
+1836 0 V
+0 2280 V
+-1836 0 V
+Z stroke
+1.000 UP
+LCb setrgbcolor
+3187 3176 M
+[ [(Helvetica-Bold) 140.0 0.0 true true 0 (B)]
+] -46.7 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LTb
+0 g .4802 g 1.000 3758 703 40 120 BoxColFill
+.4469 g 1.000 3758 822 40 119 BoxColFill
+.4397 g 1.000 3758 940 40 120 BoxColFill
+.4224 g 1.000 3758 1059 40 120 BoxColFill
+.3818 g 1.000 3758 1178 40 120 BoxColFill
+.3077 g 1.000 3758 1297 40 119 BoxColFill
+.1988 g 1.000 3758 1415 40 120 BoxColFill
+.0975 g 1.000 3758 1534 40 120 BoxColFill
+.0435 g 1.000 3758 1653 40 120 BoxColFill
+.0382 g 1.000 3758 1772 40 119 BoxColFill
+.0995 g 1.000 3758 1890 40 120 BoxColFill
+.2299 g 1.000 3758 2009 40 120 BoxColFill
+.3745 g 1.000 3758 2128 40 120 BoxColFill
+.5122 g 1.000 3758 2247 40 119 BoxColFill
+.6396 g 1.000 3758 2365 40 120 BoxColFill
+.746 g 1.000 3758 2484 40 120 BoxColFill
+.8347 g 1.000 3758 2603 40 120 BoxColFill
+.9063 g 1.000 3758 2722 40 119 BoxColFill
+.9846 g 1.000 3758 2840 40 120 BoxColFill
+.4803 g 1.000 3797 703 40 120 BoxColFill
+.4469 g 1.000 3797 822 40 119 BoxColFill
+.4397 g 1.000 3797 940 40 120 BoxColFill
+.4222 g 1.000 3797 1059 40 120 BoxColFill
+.3815 g 1.000 3797 1178 40 120 BoxColFill
+.3085 g 1.000 3797 1297 40 119 BoxColFill
+.2002 g 1.000 3797 1415 40 120 BoxColFill
+.0996 g 1.000 3797 1534 40 120 BoxColFill
+.0432 g 1.000 3797 1653 40 120 BoxColFill
+.0393 g 1.000 3797 1772 40 119 BoxColFill
+.0994 g 1.000 3797 1890 40 120 BoxColFill
+.2271 g 1.000 3797 2009 40 120 BoxColFill
+.384 g 1.000 3797 2128 40 120 BoxColFill
+.5121 g 1.000 3797 2247 40 119 BoxColFill
+.637 g 1.000 3797 2365 40 120 BoxColFill
+.7487 g 1.000 3797 2484 40 120 BoxColFill
+.829 g 1.000 3797 2603 40 120 BoxColFill
+.9055 g 1.000 3797 2722 40 119 BoxColFill
+.9781 g 1.000 3797 2840 40 120 BoxColFill
+.4802 g 1.000 3836 703 40 120 BoxColFill
+.4467 g 1.000 3836 822 40 119 BoxColFill
+.4395 g 1.000 3836 940 40 120 BoxColFill
+.4222 g 1.000 3836 1059 40 120 BoxColFill
+.3818 g 1.000 3836 1178 40 120 BoxColFill
+.3075 g 1.000 3836 1297 40 119 BoxColFill
+.1993 g 1.000 3836 1415 40 120 BoxColFill
+.0979 g 1.000 3836 1534 40 120 BoxColFill
+.0424 g 1.000 3836 1653 40 120 BoxColFill
+.0362 g 1.000 3836 1772 40 119 BoxColFill
+.1027 g 1.000 3836 1890 40 120 BoxColFill
+.224 g 1.000 3836 2009 40 120 BoxColFill
+.3782 g 1.000 3836 2128 40 120 BoxColFill
+.5143 g 1.000 3836 2247 40 119 BoxColFill
+.6316 g 1.000 3836 2365 40 120 BoxColFill
+.7454 g 1.000 3836 2484 40 120 BoxColFill
+.8229 g 1.000 3836 2603 40 120 BoxColFill
+.9066 g 1.000 3836 2722 40 119 BoxColFill
+.9674 g 1.000 3836 2840 40 120 BoxColFill
+.4803 g 1.000 3875 703 40 120 BoxColFill
+.4469 g 1.000 3875 822 40 119 BoxColFill
+.4397 g 1.000 3875 940 40 120 BoxColFill
+.4222 g 1.000 3875 1059 40 120 BoxColFill
+.3815 g 1.000 3875 1178 40 120 BoxColFill
+.3069 g 1.000 3875 1297 40 119 BoxColFill
+.1996 g 1.000 3875 1415 40 120 BoxColFill
+.0989 g 1.000 3875 1534 40 120 BoxColFill
+.0398 g 1.000 3875 1653 40 120 BoxColFill
+.0378 g 1.000 3875 1772 40 119 BoxColFill
+.0983 g 1.000 3875 1890 40 120 BoxColFill
+.2277 g 1.000 3875 2009 40 120 BoxColFill
+.3733 g 1.000 3875 2128 40 120 BoxColFill
+.5106 g 1.000 3875 2247 40 119 BoxColFill
+.6448 g 1.000 3875 2365 40 120 BoxColFill
+.7449 g 1.000 3875 2484 40 120 BoxColFill
+.8273 g 1.000 3875 2603 40 120 BoxColFill
+.9138 g 1.000 3875 2722 40 119 BoxColFill
+.9829 g 1.000 3875 2840 40 120 BoxColFill
+.4803 g 1.000 3914 703 40 120 BoxColFill
+.4469 g 1.000 3914 822 40 119 BoxColFill
+.4396 g 1.000 3914 940 40 120 BoxColFill
+.4225 g 1.000 3914 1059 40 120 BoxColFill
+.3822 g 1.000 3914 1178 40 120 BoxColFill
+.3088 g 1.000 3914 1297 40 119 BoxColFill
+.1998 g 1.000 3914 1415 40 120 BoxColFill
+.0988 g 1.000 3914 1534 40 120 BoxColFill
+.042 g 1.000 3914 1653 40 120 BoxColFill
+.0367 g 1.000 3914 1772 40 119 BoxColFill
+.1018 g 1.000 3914 1890 40 120 BoxColFill
+.2226 g 1.000 3914 2009 40 120 BoxColFill
+.3809 g 1.000 3914 2128 40 120 BoxColFill
+.5208 g 1.000 3914 2247 40 119 BoxColFill
+.6363 g 1.000 3914 2365 40 120 BoxColFill
+.7393 g 1.000 3914 2484 40 120 BoxColFill
+.8332 g 1.000 3914 2603 40 120 BoxColFill
+.9094 g 1.000 3914 2722 40 119 BoxColFill
+.9724 g 1.000 3914 2840 40 120 BoxColFill
+.4802 g 1.000 3953 703 40 120 BoxColFill
+.4469 g 1.000 3953 822 40 119 BoxColFill
+.4396 g 1.000 3953 940 40 120 BoxColFill
+.4226 g 1.000 3953 1059 40 120 BoxColFill
+.3823 g 1.000 3953 1178 40 120 BoxColFill
+.3075 g 1.000 3953 1297 40 119 BoxColFill
+.1991 g 1.000 3953 1415 40 120 BoxColFill
+.0982 g 1.000 3953 1534 40 120 BoxColFill
+.0418 g 1.000 3953 1653 40 120 BoxColFill
+.0349 g 1.000 3953 1772 40 119 BoxColFill
+.1049 g 1.000 3953 1890 40 120 BoxColFill
+.2324 g 1.000 3953 2009 40 120 BoxColFill
+.3723 g 1.000 3953 2128 40 120 BoxColFill
+.5081 g 1.000 3953 2247 40 119 BoxColFill
+.6379 g 1.000 3953 2365 40 120 BoxColFill
+.7435 g 1.000 3953 2484 40 120 BoxColFill
+.8371 g 1.000 3953 2603 40 120 BoxColFill
+.9106 g 1.000 3953 2722 40 119 BoxColFill
+.9711 g 1.000 3953 2840 40 120 BoxColFill
+.4803 g 1.000 3992 703 40 120 BoxColFill
+.4469 g 1.000 3992 822 40 119 BoxColFill
+.4395 g 1.000 3992 940 40 120 BoxColFill
+.4225 g 1.000 3992 1059 40 120 BoxColFill
+.3825 g 1.000 3992 1178 40 120 BoxColFill
+.3074 g 1.000 3992 1297 40 119 BoxColFill
+.2002 g 1.000 3992 1415 40 120 BoxColFill
+.0984 g 1.000 3992 1534 40 120 BoxColFill
+.0446 g 1.000 3992 1653 40 120 BoxColFill
+.0375 g 1.000 3992 1772 40 119 BoxColFill
+.0945 g 1.000 3992 1890 40 120 BoxColFill
+.2279 g 1.000 3992 2009 40 120 BoxColFill
+.3787 g 1.000 3992 2128 40 120 BoxColFill
+.5072 g 1.000 3992 2247 40 119 BoxColFill
+.638 g 1.000 3992 2365 40 120 BoxColFill
+.7405 g 1.000 3992 2484 40 120 BoxColFill
+.8332 g 1.000 3992 2603 40 120 BoxColFill
+.9147 g 1.000 3992 2722 40 119 BoxColFill
+.9821 g 1.000 3992 2840 40 120 BoxColFill
+.4798 g 1.000 4031 703 40 120 BoxColFill
+.4463 g 1.000 4031 822 40 119 BoxColFill
+.4388 g 1.000 4031 940 40 120 BoxColFill
+.4209 g 1.000 4031 1059 40 120 BoxColFill
+.3798 g 1.000 4031 1178 40 120 BoxColFill
+.3039 g 1.000 4031 1297 40 119 BoxColFill
+.1973 g 1.000 4031 1415 40 120 BoxColFill
+.0935 g 1.000 4031 1534 40 120 BoxColFill
+.0398 g 1.000 4031 1653 40 120 BoxColFill
+.0354 g 1.000 4031 1772 40 119 BoxColFill
+.0966 g 1.000 4031 1890 40 120 BoxColFill
+.2339 g 1.000 4031 2009 40 120 BoxColFill
+.3744 g 1.000 4031 2128 40 120 BoxColFill
+.5145 g 1.000 4031 2247 40 119 BoxColFill
+.644 g 1.000 4031 2365 40 120 BoxColFill
+.7465 g 1.000 4031 2484 40 120 BoxColFill
+.8274 g 1.000 4031 2603 40 120 BoxColFill
+.9053 g 1.000 4031 2722 40 119 BoxColFill
+.9733 g 1.000 4031 2840 40 120 BoxColFill
+.4707 g 1.000 4070 703 40 120 BoxColFill
+.4398 g 1.000 4070 822 40 119 BoxColFill
+.4312 g 1.000 4070 940 40 120 BoxColFill
+.407 g 1.000 4070 1059 40 120 BoxColFill
+.3564 g 1.000 4070 1178 40 120 BoxColFill
+.2696 g 1.000 4070 1297 40 119 BoxColFill
+.1585 g 1.000 4070 1415 40 120 BoxColFill
+.0596 g 1.000 4070 1534 40 120 BoxColFill
+.0156 g 1.000 4070 1653 40 120 BoxColFill
+.0336 g 1.000 4070 1772 40 119 BoxColFill
+.1244 g 1.000 4070 1890 40 120 BoxColFill
+.2626 g 1.000 4070 2009 40 120 BoxColFill
+.4017 g 1.000 4070 2128 40 120 BoxColFill
+.532 g 1.000 4070 2247 40 119 BoxColFill
+.644 g 1.000 4070 2365 40 120 BoxColFill
+.7462 g 1.000 4070 2484 40 120 BoxColFill
+.821 g 1.000 4070 2603 40 120 BoxColFill
+.8935 g 1.000 4070 2722 40 119 BoxColFill
+.9552 g 1.000 4070 2840 40 120 BoxColFill
+.4471 g 1.000 4109 703 40 120 BoxColFill
+.4257 g 1.000 4109 822 40 119 BoxColFill
+.4134 g 1.000 4109 940 40 120 BoxColFill
+.3846 g 1.000 4109 1059 40 120 BoxColFill
+.3334 g 1.000 4109 1178 40 120 BoxColFill
+.249 g 1.000 4109 1297 40 119 BoxColFill
+.1341 g 1.000 4109 1415 40 120 BoxColFill
+.0355 g 1.000 4109 1534 40 120 BoxColFill
+0 g 1.000 4109 1653 40 120 BoxColFill
+.047 g 1.000 4109 1772 40 119 BoxColFill
+.1491 g 1.000 4109 1890 40 120 BoxColFill
+.2868 g 1.000 4109 2009 40 120 BoxColFill
+.4141 g 1.000 4109 2128 40 120 BoxColFill
+.5482 g 1.000 4109 2247 40 119 BoxColFill
+.6449 g 1.000 4109 2365 40 120 BoxColFill
+.7463 g 1.000 4109 2484 40 120 BoxColFill
+.8196 g 1.000 4109 2603 40 120 BoxColFill
+.8824 g 1.000 4109 2722 40 119 BoxColFill
+.9499 g 1.000 4109 2840 40 120 BoxColFill
+.3626 g 1.000 4148 703 40 120 BoxColFill
+.3153 g 1.000 4148 822 40 119 BoxColFill
+.3029 g 1.000 4148 940 40 120 BoxColFill
+.2727 g 1.000 4148 1059 40 120 BoxColFill
+.224 g 1.000 4148 1178 40 120 BoxColFill
+.1763 g 1.000 4148 1297 40 119 BoxColFill
+.1517 g 1.000 4148 1415 40 120 BoxColFill
+.1426 g 1.000 4148 1534 40 120 BoxColFill
+.1483 g 1.000 4148 1653 40 120 BoxColFill
+.1975 g 1.000 4148 1772 40 119 BoxColFill
+.2959 g 1.000 4148 1890 40 120 BoxColFill
+.3997 g 1.000 4148 2009 40 120 BoxColFill
+.5127 g 1.000 4148 2128 40 120 BoxColFill
+.5969 g 1.000 4148 2247 40 119 BoxColFill
+.6871 g 1.000 4148 2365 40 120 BoxColFill
+.7637 g 1.000 4148 2484 40 120 BoxColFill
+.8281 g 1.000 4148 2603 40 120 BoxColFill
+.8906 g 1.000 4148 2722 40 119 BoxColFill
+.9373 g 1.000 4148 2840 40 120 BoxColFill
+.4799 g 1.000 4187 703 40 120 BoxColFill
+.4522 g 1.000 4187 822 40 119 BoxColFill
+.4467 g 1.000 4187 940 40 120 BoxColFill
+.4271 g 1.000 4187 1059 40 120 BoxColFill
+.401 g 1.000 4187 1178 40 120 BoxColFill
+.3795 g 1.000 4187 1297 40 119 BoxColFill
+.3765 g 1.000 4187 1415 40 120 BoxColFill
+.3803 g 1.000 4187 1534 40 120 BoxColFill
+.3924 g 1.000 4187 1653 40 120 BoxColFill
+.429 g 1.000 4187 1772 40 119 BoxColFill
+.4933 g 1.000 4187 1890 40 120 BoxColFill
+.5687 g 1.000 4187 2009 40 120 BoxColFill
+.6396 g 1.000 4187 2128 40 120 BoxColFill
+.7202 g 1.000 4187 2247 40 119 BoxColFill
+.7907 g 1.000 4187 2365 40 120 BoxColFill
+.853 g 1.000 4187 2484 40 120 BoxColFill
+.9024 g 1.000 4187 2603 40 120 BoxColFill
+.9438 g 1.000 4187 2722 40 119 BoxColFill
+.9901 g 1.000 4187 2840 40 120 BoxColFill
+.4972 g 1.000 4226 703 40 120 BoxColFill
+.4699 g 1.000 4226 822 40 119 BoxColFill
+.461 g 1.000 4226 940 40 120 BoxColFill
+.447 g 1.000 4226 1059 40 120 BoxColFill
+.4232 g 1.000 4226 1178 40 120 BoxColFill
+.3977 g 1.000 4226 1297 40 119 BoxColFill
+.3975 g 1.000 4226 1415 40 120 BoxColFill
+.3998 g 1.000 4226 1534 40 120 BoxColFill
+.4222 g 1.000 4226 1653 40 120 BoxColFill
+.4541 g 1.000 4226 1772 40 119 BoxColFill
+.5087 g 1.000 4226 1890 40 120 BoxColFill
+.5794 g 1.000 4226 2009 40 120 BoxColFill
+.6573 g 1.000 4226 2128 40 120 BoxColFill
+.7244 g 1.000 4226 2247 40 119 BoxColFill
+.7992 g 1.000 4226 2365 40 120 BoxColFill
+.8481 g 1.000 4226 2484 40 120 BoxColFill
+.9095 g 1.000 4226 2603 40 120 BoxColFill
+.9512 g 1.000 4226 2722 40 119 BoxColFill
+1 g 1.000 4226 2840 40 120 BoxColFill
+.4957 g 1.000 4265 703 40 120 BoxColFill
+.4701 g 1.000 4265 822 40 119 BoxColFill
+.4632 g 1.000 4265 940 40 120 BoxColFill
+.445 g 1.000 4265 1059 40 120 BoxColFill
+.427 g 1.000 4265 1178 40 120 BoxColFill
+.4082 g 1.000 4265 1297 40 119 BoxColFill
+.3945 g 1.000 4265 1415 40 120 BoxColFill
+.3971 g 1.000 4265 1534 40 120 BoxColFill
+.4213 g 1.000 4265 1653 40 120 BoxColFill
+.4496 g 1.000 4265 1772 40 119 BoxColFill
+.5116 g 1.000 4265 1890 40 120 BoxColFill
+.577 g 1.000 4265 2009 40 120 BoxColFill
+.6592 g 1.000 4265 2128 40 120 BoxColFill
+.7229 g 1.000 4265 2247 40 119 BoxColFill
+.7942 g 1.000 4265 2365 40 120 BoxColFill
+.848 g 1.000 4265 2484 40 120 BoxColFill
+.9022 g 1.000 4265 2603 40 120 BoxColFill
+.9535 g 1.000 4265 2722 40 119 BoxColFill
+.993 g 1.000 4265 2840 40 120 BoxColFill
+.4978 g 1.000 4304 703 40 120 BoxColFill
+.471 g 1.000 4304 822 40 119 BoxColFill
+.4644 g 1.000 4304 940 40 120 BoxColFill
+.4505 g 1.000 4304 1059 40 120 BoxColFill
+.4225 g 1.000 4304 1178 40 120 BoxColFill
+.4058 g 1.000 4304 1297 40 119 BoxColFill
+.3899 g 1.000 4304 1415 40 120 BoxColFill
+.3994 g 1.000 4304 1534 40 120 BoxColFill
+.4151 g 1.000 4304 1653 40 120 BoxColFill
+.4475 g 1.000 4304 1772 40 119 BoxColFill
+.5051 g 1.000 4304 1890 40 120 BoxColFill
+.5754 g 1.000 4304 2009 40 120 BoxColFill
+.6563 g 1.000 4304 2128 40 120 BoxColFill
+.7218 g 1.000 4304 2247 40 119 BoxColFill
+.7882 g 1.000 4304 2365 40 120 BoxColFill
+.8504 g 1.000 4304 2484 40 120 BoxColFill
+.901 g 1.000 4304 2603 40 120 BoxColFill
+.9559 g 1.000 4304 2722 40 119 BoxColFill
+.9949 g 1.000 4304 2840 40 120 BoxColFill
+.4977 g 1.000 4343 703 41 120 BoxColFill
+.473 g 1.000 4343 822 41 119 BoxColFill
+.4677 g 1.000 4343 940 41 120 BoxColFill
+.4494 g 1.000 4343 1059 41 120 BoxColFill
+.4215 g 1.000 4343 1178 41 120 BoxColFill
+.4104 g 1.000 4343 1297 41 119 BoxColFill
+.3912 g 1.000 4343 1415 41 120 BoxColFill
+.3985 g 1.000 4343 1534 41 120 BoxColFill
+.4161 g 1.000 4343 1653 41 120 BoxColFill
+.449 g 1.000 4343 1772 41 119 BoxColFill
+.5074 g 1.000 4343 1890 41 120 BoxColFill
+.5758 g 1.000 4343 2009 41 120 BoxColFill
+.6528 g 1.000 4343 2128 41 120 BoxColFill
+.7202 g 1.000 4343 2247 41 119 BoxColFill
+.7892 g 1.000 4343 2365 41 120 BoxColFill
+.8523 g 1.000 4343 2484 41 120 BoxColFill
+.901 g 1.000 4343 2603 41 120 BoxColFill
+.9429 g 1.000 4343 2722 41 119 BoxColFill
+.9888 g 1.000 4343 2840 41 120 BoxColFill
+.4971 g 1.000 4383 703 40 120 BoxColFill
+.4725 g 1.000 4383 822 40 119 BoxColFill
+.4693 g 1.000 4383 940 40 120 BoxColFill
+.4493 g 1.000 4383 1059 40 120 BoxColFill
+.4226 g 1.000 4383 1178 40 120 BoxColFill
+.4047 g 1.000 4383 1297 40 119 BoxColFill
+.3857 g 1.000 4383 1415 40 120 BoxColFill
+.3894 g 1.000 4383 1534 40 120 BoxColFill
+.3888 g 1.000 4383 1653 40 120 BoxColFill
+.4231 g 1.000 4383 1772 40 119 BoxColFill
+.501 g 1.000 4383 1890 40 120 BoxColFill
+.5761 g 1.000 4383 2009 40 120 BoxColFill
+.649 g 1.000 4383 2128 40 120 BoxColFill
+.7199 g 1.000 4383 2247 40 119 BoxColFill
+.7911 g 1.000 4383 2365 40 120 BoxColFill
+.8438 g 1.000 4383 2484 40 120 BoxColFill
+.894 g 1.000 4383 2603 40 120 BoxColFill
+.9488 g 1.000 4383 2722 40 119 BoxColFill
+.9869 g 1.000 4383 2840 40 120 BoxColFill
+.4948 g 1.000 4422 703 40 120 BoxColFill
+.4686 g 1.000 4422 822 40 119 BoxColFill
+.4667 g 1.000 4422 940 40 120 BoxColFill
+.4477 g 1.000 4422 1059 40 120 BoxColFill
+.4277 g 1.000 4422 1178 40 120 BoxColFill
+.4067 g 1.000 4422 1297 40 119 BoxColFill
+.3945 g 1.000 4422 1415 40 120 BoxColFill
+.3945 g 1.000 4422 1534 40 120 BoxColFill
+.397 g 1.000 4422 1653 40 120 BoxColFill
+.4272 g 1.000 4422 1772 40 119 BoxColFill
+.4744 g 1.000 4422 1890 40 120 BoxColFill
+.5619 g 1.000 4422 2009 40 120 BoxColFill
+.6397 g 1.000 4422 2128 40 120 BoxColFill
+.7103 g 1.000 4422 2247 40 119 BoxColFill
+.7805 g 1.000 4422 2365 40 120 BoxColFill
+.8412 g 1.000 4422 2484 40 120 BoxColFill
+.8926 g 1.000 4422 2603 40 120 BoxColFill
+.9401 g 1.000 4422 2722 40 119 BoxColFill
+.9855 g 1.000 4422 2840 40 120 BoxColFill
+.4986 g 1.000 4461 703 40 120 BoxColFill
+.4762 g 1.000 4461 822 40 119 BoxColFill
+.4716 g 1.000 4461 940 40 120 BoxColFill
+.4516 g 1.000 4461 1059 40 120 BoxColFill
+.4332 g 1.000 4461 1178 40 120 BoxColFill
+.4129 g 1.000 4461 1297 40 119 BoxColFill
+.4164 g 1.000 4461 1415 40 120 BoxColFill
+.4074 g 1.000 4461 1534 40 120 BoxColFill
+.4184 g 1.000 4461 1653 40 120 BoxColFill
+.4398 g 1.000 4461 1772 40 119 BoxColFill
+.491 g 1.000 4461 1890 40 120 BoxColFill
+.5582 g 1.000 4461 2009 40 120 BoxColFill
+.6288 g 1.000 4461 2128 40 120 BoxColFill
+.6953 g 1.000 4461 2247 40 119 BoxColFill
+.7579 g 1.000 4461 2365 40 120 BoxColFill
+.8264 g 1.000 4461 2484 40 120 BoxColFill
+.8833 g 1.000 4461 2603 40 120 BoxColFill
+.9257 g 1.000 4461 2722 40 119 BoxColFill
+.9682 g 1.000 4461 2840 40 120 BoxColFill
+.5156 g 1.000 4500 703 40 120 BoxColFill
+.4942 g 1.000 4500 822 40 119 BoxColFill
+.4851 g 1.000 4500 940 40 120 BoxColFill
+.4704 g 1.000 4500 1059 40 120 BoxColFill
+.4589 g 1.000 4500 1178 40 120 BoxColFill
+.4431 g 1.000 4500 1297 40 119 BoxColFill
+.4319 g 1.000 4500 1415 40 120 BoxColFill
+.4387 g 1.000 4500 1534 40 120 BoxColFill
+.4331 g 1.000 4500 1653 40 120 BoxColFill
+.4653 g 1.000 4500 1772 40 119 BoxColFill
+.518 g 1.000 4500 1890 40 120 BoxColFill
+.575 g 1.000 4500 2009 40 120 BoxColFill
+.6408 g 1.000 4500 2128 40 120 BoxColFill
+.7057 g 1.000 4500 2247 40 119 BoxColFill
+.7661 g 1.000 4500 2365 40 120 BoxColFill
+.8201 g 1.000 4500 2484 40 120 BoxColFill
+.8675 g 1.000 4500 2603 40 120 BoxColFill
+.9079 g 1.000 4500 2722 40 119 BoxColFill
+.9464 g 1.000 4500 2840 40 120 BoxColFill
+.5636 g 1.000 4539 703 40 120 BoxColFill
+.5451 g 1.000 4539 822 40 119 BoxColFill
+.5398 g 1.000 4539 940 40 120 BoxColFill
+.5302 g 1.000 4539 1059 40 120 BoxColFill
+.5196 g 1.000 4539 1178 40 120 BoxColFill
+.5103 g 1.000 4539 1297 40 119 BoxColFill
+.5043 g 1.000 4539 1415 40 120 BoxColFill
+.4974 g 1.000 4539 1534 40 120 BoxColFill
+.5095 g 1.000 4539 1653 40 120 BoxColFill
+.5214 g 1.000 4539 1772 40 119 BoxColFill
+.5573 g 1.000 4539 1890 40 120 BoxColFill
+.6058 g 1.000 4539 2009 40 120 BoxColFill
+.6616 g 1.000 4539 2128 40 120 BoxColFill
+.7164 g 1.000 4539 2247 40 119 BoxColFill
+.7723 g 1.000 4539 2365 40 120 BoxColFill
+.8217 g 1.000 4539 2484 40 120 BoxColFill
+.869 g 1.000 4539 2603 40 120 BoxColFill
+.9019 g 1.000 4539 2722 40 119 BoxColFill
+.9281 g 1.000 4539 2840 40 120 BoxColFill
+.6508 g 1.000 4578 703 40 120 BoxColFill
+.6378 g 1.000 4578 822 40 119 BoxColFill
+.6331 g 1.000 4578 940 40 120 BoxColFill
+.6274 g 1.000 4578 1059 40 120 BoxColFill
+.6193 g 1.000 4578 1178 40 120 BoxColFill
+.6183 g 1.000 4578 1297 40 119 BoxColFill
+.6176 g 1.000 4578 1415 40 120 BoxColFill
+.61 g 1.000 4578 1534 40 120 BoxColFill
+.6066 g 1.000 4578 1653 40 120 BoxColFill
+.6143 g 1.000 4578 1772 40 119 BoxColFill
+.6428 g 1.000 4578 1890 40 120 BoxColFill
+.677 g 1.000 4578 2009 40 120 BoxColFill
+.7139 g 1.000 4578 2128 40 120 BoxColFill
+.7558 g 1.000 4578 2247 40 119 BoxColFill
+.7969 g 1.000 4578 2365 40 120 BoxColFill
+.8349 g 1.000 4578 2484 40 120 BoxColFill
+.8705 g 1.000 4578 2603 40 120 BoxColFill
+.8911 g 1.000 4578 2722 40 119 BoxColFill
+.9239 g 1.000 4578 2840 40 120 BoxColFill
+.6451 g 1.000 4617 703 40 120 BoxColFill
+.6309 g 1.000 4617 822 40 119 BoxColFill
+.6267 g 1.000 4617 940 40 120 BoxColFill
+.6196 g 1.000 4617 1059 40 120 BoxColFill
+.6137 g 1.000 4617 1178 40 120 BoxColFill
+.6138 g 1.000 4617 1297 40 119 BoxColFill
+.6129 g 1.000 4617 1415 40 120 BoxColFill
+.6046 g 1.000 4617 1534 40 120 BoxColFill
+.6038 g 1.000 4617 1653 40 120 BoxColFill
+.6225 g 1.000 4617 1772 40 119 BoxColFill
+.6532 g 1.000 4617 1890 40 120 BoxColFill
+.6781 g 1.000 4617 2009 40 120 BoxColFill
+.7266 g 1.000 4617 2128 40 120 BoxColFill
+.7628 g 1.000 4617 2247 40 119 BoxColFill
+.8068 g 1.000 4617 2365 40 120 BoxColFill
+.8438 g 1.000 4617 2484 40 120 BoxColFill
+.8716 g 1.000 4617 2603 40 120 BoxColFill
+.9072 g 1.000 4617 2722 40 119 BoxColFill
+.9301 g 1.000 4617 2840 40 120 BoxColFill
+.6403 g 1.000 4656 703 40 120 BoxColFill
+.6238 g 1.000 4656 822 40 119 BoxColFill
+.625 g 1.000 4656 940 40 120 BoxColFill
+.622 g 1.000 4656 1059 40 120 BoxColFill
+.6091 g 1.000 4656 1178 40 120 BoxColFill
+.6085 g 1.000 4656 1297 40 119 BoxColFill
+.6067 g 1.000 4656 1415 40 120 BoxColFill
+.6064 g 1.000 4656 1534 40 120 BoxColFill
+.6121 g 1.000 4656 1653 40 120 BoxColFill
+.6259 g 1.000 4656 1772 40 119 BoxColFill
+.6478 g 1.000 4656 1890 40 120 BoxColFill
+.6893 g 1.000 4656 2009 40 120 BoxColFill
+.7256 g 1.000 4656 2128 40 120 BoxColFill
+.7695 g 1.000 4656 2247 40 119 BoxColFill
+.8083 g 1.000 4656 2365 40 120 BoxColFill
+.8479 g 1.000 4656 2484 40 120 BoxColFill
+.8724 g 1.000 4656 2603 40 120 BoxColFill
+.9053 g 1.000 4656 2722 40 119 BoxColFill
+.9286 g 1.000 4656 2840 40 120 BoxColFill
+.6371 g 1.000 4695 703 40 120 BoxColFill
+.6256 g 1.000 4695 822 40 119 BoxColFill
+.6187 g 1.000 4695 940 40 120 BoxColFill
+.6196 g 1.000 4695 1059 40 120 BoxColFill
+.6117 g 1.000 4695 1178 40 120 BoxColFill
+.6126 g 1.000 4695 1297 40 119 BoxColFill
+.6112 g 1.000 4695 1415 40 120 BoxColFill
+.603 g 1.000 4695 1534 40 120 BoxColFill
+.6116 g 1.000 4695 1653 40 120 BoxColFill
+.6219 g 1.000 4695 1772 40 119 BoxColFill
+.6538 g 1.000 4695 1890 40 120 BoxColFill
+.6952 g 1.000 4695 2009 40 120 BoxColFill
+.7327 g 1.000 4695 2128 40 120 BoxColFill
+.7729 g 1.000 4695 2247 40 119 BoxColFill
+.8128 g 1.000 4695 2365 40 120 BoxColFill
+.8431 g 1.000 4695 2484 40 120 BoxColFill
+.8742 g 1.000 4695 2603 40 120 BoxColFill
+.9063 g 1.000 4695 2722 40 119 BoxColFill
+.9321 g 1.000 4695 2840 40 120 BoxColFill
+.6438 g 1.000 4734 703 40 120 BoxColFill
+.6192 g 1.000 4734 822 40 119 BoxColFill
+.6197 g 1.000 4734 940 40 120 BoxColFill
+.6156 g 1.000 4734 1059 40 120 BoxColFill
+.6138 g 1.000 4734 1178 40 120 BoxColFill
+.6116 g 1.000 4734 1297 40 119 BoxColFill
+.6059 g 1.000 4734 1415 40 120 BoxColFill
+.6055 g 1.000 4734 1534 40 120 BoxColFill
+.6049 g 1.000 4734 1653 40 120 BoxColFill
+.6271 g 1.000 4734 1772 40 119 BoxColFill
+.6609 g 1.000 4734 1890 40 120 BoxColFill
+.6923 g 1.000 4734 2009 40 120 BoxColFill
+.7328 g 1.000 4734 2128 40 120 BoxColFill
+.7763 g 1.000 4734 2247 40 119 BoxColFill
+.8169 g 1.000 4734 2365 40 120 BoxColFill
+.8495 g 1.000 4734 2484 40 120 BoxColFill
+.8728 g 1.000 4734 2603 40 120 BoxColFill
+.905 g 1.000 4734 2722 40 119 BoxColFill
+.9342 g 1.000 4734 2840 40 120 BoxColFill
+.6331 g 1.000 4773 703 40 120 BoxColFill
+.618 g 1.000 4773 822 40 119 BoxColFill
+.6167 g 1.000 4773 940 40 120 BoxColFill
+.6141 g 1.000 4773 1059 40 120 BoxColFill
+.6076 g 1.000 4773 1178 40 120 BoxColFill
+.6009 g 1.000 4773 1297 40 119 BoxColFill
+.5991 g 1.000 4773 1415 40 120 BoxColFill
+.5967 g 1.000 4773 1534 40 120 BoxColFill
+.6125 g 1.000 4773 1653 40 120 BoxColFill
+.6331 g 1.000 4773 1772 40 119 BoxColFill
+.6586 g 1.000 4773 1890 40 120 BoxColFill
+.6973 g 1.000 4773 2009 40 120 BoxColFill
+.7361 g 1.000 4773 2128 40 120 BoxColFill
+.7852 g 1.000 4773 2247 40 119 BoxColFill
+.8183 g 1.000 4773 2365 40 120 BoxColFill
+.8638 g 1.000 4773 2484 40 120 BoxColFill
+.8849 g 1.000 4773 2603 40 120 BoxColFill
+.9088 g 1.000 4773 2722 40 119 BoxColFill
+.9337 g 1.000 4773 2840 40 120 BoxColFill
+.6323 g 1.000 4812 703 40 120 BoxColFill
+.6183 g 1.000 4812 822 40 119 BoxColFill
+.6175 g 1.000 4812 940 40 120 BoxColFill
+.6135 g 1.000 4812 1059 40 120 BoxColFill
+.6028 g 1.000 4812 1178 40 120 BoxColFill
+.6009 g 1.000 4812 1297 40 119 BoxColFill
+.6001 g 1.000 4812 1415 40 120 BoxColFill
+.6093 g 1.000 4812 1534 40 120 BoxColFill
+.6076 g 1.000 4812 1653 40 120 BoxColFill
+.6307 g 1.000 4812 1772 40 119 BoxColFill
+.6626 g 1.000 4812 1890 40 120 BoxColFill
+.7024 g 1.000 4812 2009 40 120 BoxColFill
+.7422 g 1.000 4812 2128 40 120 BoxColFill
+.781 g 1.000 4812 2247 40 119 BoxColFill
+.8255 g 1.000 4812 2365 40 120 BoxColFill
+.8564 g 1.000 4812 2484 40 120 BoxColFill
+.8833 g 1.000 4812 2603 40 120 BoxColFill
+.9091 g 1.000 4812 2722 40 119 BoxColFill
+.9422 g 1.000 4812 2840 40 120 BoxColFill
+.629 g 1.000 4851 703 40 120 BoxColFill
+.6137 g 1.000 4851 822 40 119 BoxColFill
+.6165 g 1.000 4851 940 40 120 BoxColFill
+.6087 g 1.000 4851 1059 40 120 BoxColFill
+.5991 g 1.000 4851 1178 40 120 BoxColFill
+.5989 g 1.000 4851 1297 40 119 BoxColFill
+.601 g 1.000 4851 1415 40 120 BoxColFill
+.6086 g 1.000 4851 1534 40 120 BoxColFill
+.6084 g 1.000 4851 1653 40 120 BoxColFill
+.6295 g 1.000 4851 1772 40 119 BoxColFill
+.6581 g 1.000 4851 1890 40 120 BoxColFill
+.708 g 1.000 4851 2009 40 120 BoxColFill
+.7467 g 1.000 4851 2128 40 120 BoxColFill
+.7814 g 1.000 4851 2247 40 119 BoxColFill
+.8224 g 1.000 4851 2365 40 120 BoxColFill
+.852 g 1.000 4851 2484 40 120 BoxColFill
+.884 g 1.000 4851 2603 40 120 BoxColFill
+.9097 g 1.000 4851 2722 40 119 BoxColFill
+.9442 g 1.000 4851 2840 40 120 BoxColFill
+.6327 g 1.000 4890 703 40 120 BoxColFill
+.6124 g 1.000 4890 822 40 119 BoxColFill
+.6084 g 1.000 4890 940 40 120 BoxColFill
+.6134 g 1.000 4890 1059 40 120 BoxColFill
+.601 g 1.000 4890 1178 40 120 BoxColFill
+.6002 g 1.000 4890 1297 40 119 BoxColFill
+.605 g 1.000 4890 1415 40 120 BoxColFill
+.6074 g 1.000 4890 1534 40 120 BoxColFill
+.62 g 1.000 4890 1653 40 120 BoxColFill
+.6366 g 1.000 4890 1772 40 119 BoxColFill
+.663 g 1.000 4890 1890 40 120 BoxColFill
+.7016 g 1.000 4890 2009 40 120 BoxColFill
+.7458 g 1.000 4890 2128 40 120 BoxColFill
+.7841 g 1.000 4890 2247 40 119 BoxColFill
+.8281 g 1.000 4890 2365 40 120 BoxColFill
+.8578 g 1.000 4890 2484 40 120 BoxColFill
+.8851 g 1.000 4890 2603 40 120 BoxColFill
+.9162 g 1.000 4890 2722 40 119 BoxColFill
+.9343 g 1.000 4890 2840 40 120 BoxColFill
+.632 g 1.000 4929 703 41 120 BoxColFill
+.6185 g 1.000 4929 822 41 119 BoxColFill
+.6076 g 1.000 4929 940 41 120 BoxColFill
+.6127 g 1.000 4929 1059 41 120 BoxColFill
+.6036 g 1.000 4929 1178 41 120 BoxColFill
+.606 g 1.000 4929 1297 41 119 BoxColFill
+.5959 g 1.000 4929 1415 41 120 BoxColFill
+.6081 g 1.000 4929 1534 41 120 BoxColFill
+.6151 g 1.000 4929 1653 41 120 BoxColFill
+.6345 g 1.000 4929 1772 41 119 BoxColFill
+.6732 g 1.000 4929 1890 41 120 BoxColFill
+.7092 g 1.000 4929 2009 41 120 BoxColFill
+.7532 g 1.000 4929 2128 41 120 BoxColFill
+.7892 g 1.000 4929 2247 41 119 BoxColFill
+.8283 g 1.000 4929 2365 41 120 BoxColFill
+.8582 g 1.000 4929 2484 41 120 BoxColFill
+.8971 g 1.000 4929 2603 41 120 BoxColFill
+.9166 g 1.000 4929 2722 41 119 BoxColFill
+.9334 g 1.000 4929 2840 41 120 BoxColFill
+.623 g 1.000 4969 703 40 120 BoxColFill
+.6071 g 1.000 4969 822 40 119 BoxColFill
+.6029 g 1.000 4969 940 40 120 BoxColFill
+.6054 g 1.000 4969 1059 40 120 BoxColFill
+.597 g 1.000 4969 1178 40 120 BoxColFill
+.5967 g 1.000 4969 1297 40 119 BoxColFill
+.6012 g 1.000 4969 1415 40 120 BoxColFill
+.604 g 1.000 4969 1534 40 120 BoxColFill
+.6267 g 1.000 4969 1653 40 120 BoxColFill
+.6323 g 1.000 4969 1772 40 119 BoxColFill
+.6767 g 1.000 4969 1890 40 120 BoxColFill
+.7075 g 1.000 4969 2009 40 120 BoxColFill
+.7577 g 1.000 4969 2128 40 120 BoxColFill
+.7954 g 1.000 4969 2247 40 119 BoxColFill
+.8247 g 1.000 4969 2365 40 120 BoxColFill
+.8582 g 1.000 4969 2484 40 120 BoxColFill
+.8952 g 1.000 4969 2603 40 120 BoxColFill
+.9178 g 1.000 4969 2722 40 119 BoxColFill
+.941 g 1.000 4969 2840 40 120 BoxColFill
+.6233 g 1.000 5008 703 40 120 BoxColFill
+.6141 g 1.000 5008 822 40 119 BoxColFill
+.6084 g 1.000 5008 940 40 120 BoxColFill
+.6111 g 1.000 5008 1059 40 120 BoxColFill
+.5949 g 1.000 5008 1178 40 120 BoxColFill
+.6008 g 1.000 5008 1297 40 119 BoxColFill
+.6028 g 1.000 5008 1415 40 120 BoxColFill
+.6121 g 1.000 5008 1534 40 120 BoxColFill
+.6197 g 1.000 5008 1653 40 120 BoxColFill
+.6441 g 1.000 5008 1772 40 119 BoxColFill
+.6838 g 1.000 5008 1890 40 120 BoxColFill
+.722 g 1.000 5008 2009 40 120 BoxColFill
+.7664 g 1.000 5008 2128 40 120 BoxColFill
+.7924 g 1.000 5008 2247 40 119 BoxColFill
+.8321 g 1.000 5008 2365 40 120 BoxColFill
+.8709 g 1.000 5008 2484 40 120 BoxColFill
+.8842 g 1.000 5008 2603 40 120 BoxColFill
+.9252 g 1.000 5008 2722 40 119 BoxColFill
+.9358 g 1.000 5008 2840 40 120 BoxColFill
+.6149 g 1.000 5047 703 40 120 BoxColFill
+.608 g 1.000 5047 822 40 119 BoxColFill
+.6016 g 1.000 5047 940 40 120 BoxColFill
+.5969 g 1.000 5047 1059 40 120 BoxColFill
+.5981 g 1.000 5047 1178 40 120 BoxColFill
+.6003 g 1.000 5047 1297 40 119 BoxColFill
+.6046 g 1.000 5047 1415 40 120 BoxColFill
+.6053 g 1.000 5047 1534 40 120 BoxColFill
+.6268 g 1.000 5047 1653 40 120 BoxColFill
+.6443 g 1.000 5047 1772 40 119 BoxColFill
+.6841 g 1.000 5047 1890 40 120 BoxColFill
+.7299 g 1.000 5047 2009 40 120 BoxColFill
+.7623 g 1.000 5047 2128 40 120 BoxColFill
+.8038 g 1.000 5047 2247 40 119 BoxColFill
+.839 g 1.000 5047 2365 40 120 BoxColFill
+.8664 g 1.000 5047 2484 40 120 BoxColFill
+.8973 g 1.000 5047 2603 40 120 BoxColFill
+.9199 g 1.000 5047 2722 40 119 BoxColFill
+.9435 g 1.000 5047 2840 40 120 BoxColFill
+.6257 g 1.000 5086 703 40 120 BoxColFill
+.6098 g 1.000 5086 822 40 119 BoxColFill
+.603 g 1.000 5086 940 40 120 BoxColFill
+.6046 g 1.000 5086 1059 40 120 BoxColFill
+.5956 g 1.000 5086 1178 40 120 BoxColFill
+.6021 g 1.000 5086 1297 40 119 BoxColFill
+.6018 g 1.000 5086 1415 40 120 BoxColFill
+.6098 g 1.000 5086 1534 40 120 BoxColFill
+.6272 g 1.000 5086 1653 40 120 BoxColFill
+.6518 g 1.000 5086 1772 40 119 BoxColFill
+.6921 g 1.000 5086 1890 40 120 BoxColFill
+.7333 g 1.000 5086 2009 40 120 BoxColFill
+.7722 g 1.000 5086 2128 40 120 BoxColFill
+.817 g 1.000 5086 2247 40 119 BoxColFill
+.8415 g 1.000 5086 2365 40 120 BoxColFill
+.8728 g 1.000 5086 2484 40 120 BoxColFill
+.8969 g 1.000 5086 2603 40 120 BoxColFill
+.9207 g 1.000 5086 2722 40 119 BoxColFill
+.9406 g 1.000 5086 2840 40 120 BoxColFill
+.6187 g 1.000 5125 703 40 120 BoxColFill
+.6093 g 1.000 5125 822 40 119 BoxColFill
+.6025 g 1.000 5125 940 40 120 BoxColFill
+.6043 g 1.000 5125 1059 40 120 BoxColFill
+.5945 g 1.000 5125 1178 40 120 BoxColFill
+.606 g 1.000 5125 1297 40 119 BoxColFill
+.6131 g 1.000 5125 1415 40 120 BoxColFill
+.6074 g 1.000 5125 1534 40 120 BoxColFill
+.6315 g 1.000 5125 1653 40 120 BoxColFill
+.6583 g 1.000 5125 1772 40 119 BoxColFill
+.6924 g 1.000 5125 1890 40 120 BoxColFill
+.7414 g 1.000 5125 2009 40 120 BoxColFill
+.7691 g 1.000 5125 2128 40 120 BoxColFill
+.8105 g 1.000 5125 2247 40 119 BoxColFill
+.8461 g 1.000 5125 2365 40 120 BoxColFill
+.8769 g 1.000 5125 2484 40 120 BoxColFill
+.904 g 1.000 5125 2603 40 120 BoxColFill
+.9208 g 1.000 5125 2722 40 119 BoxColFill
+.9399 g 1.000 5125 2840 40 120 BoxColFill
+.6194 g 1.000 5164 703 40 120 BoxColFill
+.5997 g 1.000 5164 822 40 119 BoxColFill
+.6022 g 1.000 5164 940 40 120 BoxColFill
+.605 g 1.000 5164 1059 40 120 BoxColFill
+.6019 g 1.000 5164 1178 40 120 BoxColFill
+.607 g 1.000 5164 1297 40 119 BoxColFill
+.5996 g 1.000 5164 1415 40 120 BoxColFill
+.613 g 1.000 5164 1534 40 120 BoxColFill
+.6354 g 1.000 5164 1653 40 120 BoxColFill
+.6657 g 1.000 5164 1772 40 119 BoxColFill
+.6929 g 1.000 5164 1890 40 120 BoxColFill
+.736 g 1.000 5164 2009 40 120 BoxColFill
+.7732 g 1.000 5164 2128 40 120 BoxColFill
+.8177 g 1.000 5164 2247 40 119 BoxColFill
+.8423 g 1.000 5164 2365 40 120 BoxColFill
+.8752 g 1.000 5164 2484 40 120 BoxColFill
+.903 g 1.000 5164 2603 40 120 BoxColFill
+.9264 g 1.000 5164 2722 40 119 BoxColFill
+.9443 g 1.000 5164 2840 40 120 BoxColFill
+.6181 g 1.000 5203 703 40 120 BoxColFill
+.6103 g 1.000 5203 822 40 119 BoxColFill
+.6042 g 1.000 5203 940 40 120 BoxColFill
+.6004 g 1.000 5203 1059 40 120 BoxColFill
+.6029 g 1.000 5203 1178 40 120 BoxColFill
+.6048 g 1.000 5203 1297 40 119 BoxColFill
+.5968 g 1.000 5203 1415 40 120 BoxColFill
+.6138 g 1.000 5203 1534 40 120 BoxColFill
+.6317 g 1.000 5203 1653 40 120 BoxColFill
+.6651 g 1.000 5203 1772 40 119 BoxColFill
+.7053 g 1.000 5203 1890 40 120 BoxColFill
+.7421 g 1.000 5203 2009 40 120 BoxColFill
+.7818 g 1.000 5203 2128 40 120 BoxColFill
+.8175 g 1.000 5203 2247 40 119 BoxColFill
+.852 g 1.000 5203 2365 40 120 BoxColFill
+.8779 g 1.000 5203 2484 40 120 BoxColFill
+.8992 g 1.000 5203 2603 40 120 BoxColFill
+.9258 g 1.000 5203 2722 40 119 BoxColFill
+.95 g 1.000 5203 2840 40 120 BoxColFill
+.6211 g 1.000 5242 703 40 120 BoxColFill
+.6125 g 1.000 5242 822 40 119 BoxColFill
+.6076 g 1.000 5242 940 40 120 BoxColFill
+.6051 g 1.000 5242 1059 40 120 BoxColFill
+.5983 g 1.000 5242 1178 40 120 BoxColFill
+.6062 g 1.000 5242 1297 40 119 BoxColFill
+.6121 g 1.000 5242 1415 40 120 BoxColFill
+.6198 g 1.000 5242 1534 40 120 BoxColFill
+.6392 g 1.000 5242 1653 40 120 BoxColFill
+.6685 g 1.000 5242 1772 40 119 BoxColFill
+.7067 g 1.000 5242 1890 40 120 BoxColFill
+.7475 g 1.000 5242 2009 40 120 BoxColFill
+.7927 g 1.000 5242 2128 40 120 BoxColFill
+.8241 g 1.000 5242 2247 40 119 BoxColFill
+.8536 g 1.000 5242 2365 40 120 BoxColFill
+.8871 g 1.000 5242 2484 40 120 BoxColFill
+.9067 g 1.000 5242 2603 40 120 BoxColFill
+.9219 g 1.000 5242 2722 40 119 BoxColFill
+.9443 g 1.000 5242 2840 40 120 BoxColFill
+.6173 g 1.000 5281 703 40 120 BoxColFill
+.6081 g 1.000 5281 822 40 119 BoxColFill
+.6011 g 1.000 5281 940 40 120 BoxColFill
+.6074 g 1.000 5281 1059 40 120 BoxColFill
+.6057 g 1.000 5281 1178 40 120 BoxColFill
+.6016 g 1.000 5281 1297 40 119 BoxColFill
+.6082 g 1.000 5281 1415 40 120 BoxColFill
+.6167 g 1.000 5281 1534 40 120 BoxColFill
+.6444 g 1.000 5281 1653 40 120 BoxColFill
+.6729 g 1.000 5281 1772 40 119 BoxColFill
+.7174 g 1.000 5281 1890 40 120 BoxColFill
+.7568 g 1.000 5281 2009 40 120 BoxColFill
+.7849 g 1.000 5281 2128 40 120 BoxColFill
+.8244 g 1.000 5281 2247 40 119 BoxColFill
+.8542 g 1.000 5281 2365 40 120 BoxColFill
+.8849 g 1.000 5281 2484 40 120 BoxColFill
+.9054 g 1.000 5281 2603 40 120 BoxColFill
+.9325 g 1.000 5281 2722 40 119 BoxColFill
+.947 g 1.000 5281 2840 40 120 BoxColFill
+.6181 g 1.000 5320 703 40 120 BoxColFill
+.6066 g 1.000 5320 822 40 119 BoxColFill
+.6061 g 1.000 5320 940 40 120 BoxColFill
+.6042 g 1.000 5320 1059 40 120 BoxColFill
+.6059 g 1.000 5320 1178 40 120 BoxColFill
+.606 g 1.000 5320 1297 40 119 BoxColFill
+.6123 g 1.000 5320 1415 40 120 BoxColFill
+.6228 g 1.000 5320 1534 40 120 BoxColFill
+.6465 g 1.000 5320 1653 40 120 BoxColFill
+.6812 g 1.000 5320 1772 40 119 BoxColFill
+.714 g 1.000 5320 1890 40 120 BoxColFill
+.7465 g 1.000 5320 2009 40 120 BoxColFill
+.7935 g 1.000 5320 2128 40 120 BoxColFill
+.8263 g 1.000 5320 2247 40 119 BoxColFill
+.8676 g 1.000 5320 2365 40 120 BoxColFill
+.8847 g 1.000 5320 2484 40 120 BoxColFill
+.9114 g 1.000 5320 2603 40 120 BoxColFill
+.9328 g 1.000 5320 2722 40 119 BoxColFill
+.9458 g 1.000 5320 2840 40 120 BoxColFill
+.6221 g 1.000 5359 703 40 120 BoxColFill
+.6105 g 1.000 5359 822 40 119 BoxColFill
+.6025 g 1.000 5359 940 40 120 BoxColFill
+.6059 g 1.000 5359 1059 40 120 BoxColFill
+.6012 g 1.000 5359 1178 40 120 BoxColFill
+.6081 g 1.000 5359 1297 40 119 BoxColFill
+.6191 g 1.000 5359 1415 40 120 BoxColFill
+.6242 g 1.000 5359 1534 40 120 BoxColFill
+.6461 g 1.000 5359 1653 40 120 BoxColFill
+.6767 g 1.000 5359 1772 40 119 BoxColFill
+.7143 g 1.000 5359 1890 40 120 BoxColFill
+.7536 g 1.000 5359 2009 40 120 BoxColFill
+.7956 g 1.000 5359 2128 40 120 BoxColFill
+.8365 g 1.000 5359 2247 40 119 BoxColFill
+.8603 g 1.000 5359 2365 40 120 BoxColFill
+.8935 g 1.000 5359 2484 40 120 BoxColFill
+.9118 g 1.000 5359 2603 40 120 BoxColFill
+.9342 g 1.000 5359 2722 40 119 BoxColFill
+.9416 g 1.000 5359 2840 40 120 BoxColFill
+.6211 g 1.000 5398 703 40 120 BoxColFill
+.6174 g 1.000 5398 822 40 119 BoxColFill
+.6103 g 1.000 5398 940 40 120 BoxColFill
+.6092 g 1.000 5398 1059 40 120 BoxColFill
+.6041 g 1.000 5398 1178 40 120 BoxColFill
+.6137 g 1.000 5398 1297 40 119 BoxColFill
+.6183 g 1.000 5398 1415 40 120 BoxColFill
+.629 g 1.000 5398 1534 40 120 BoxColFill
+.6615 g 1.000 5398 1653 40 120 BoxColFill
+.6848 g 1.000 5398 1772 40 119 BoxColFill
+.7204 g 1.000 5398 1890 40 120 BoxColFill
+.7586 g 1.000 5398 2009 40 120 BoxColFill
+.8045 g 1.000 5398 2128 40 120 BoxColFill
+.8365 g 1.000 5398 2247 40 119 BoxColFill
+.8605 g 1.000 5398 2365 40 120 BoxColFill
+.8938 g 1.000 5398 2484 40 120 BoxColFill
+.9103 g 1.000 5398 2603 40 120 BoxColFill
+.9311 g 1.000 5398 2722 40 119 BoxColFill
+.9507 g 1.000 5398 2840 40 120 BoxColFill
+.6294 g 1.000 5437 703 40 120 BoxColFill
+.6176 g 1.000 5437 822 40 119 BoxColFill
+.6134 g 1.000 5437 940 40 120 BoxColFill
+.6131 g 1.000 5437 1059 40 120 BoxColFill
+.6153 g 1.000 5437 1178 40 120 BoxColFill
+.6139 g 1.000 5437 1297 40 119 BoxColFill
+.6201 g 1.000 5437 1415 40 120 BoxColFill
+.6337 g 1.000 5437 1534 40 120 BoxColFill
+.6578 g 1.000 5437 1653 40 120 BoxColFill
+.6876 g 1.000 5437 1772 40 119 BoxColFill
+.7292 g 1.000 5437 1890 40 120 BoxColFill
+.7624 g 1.000 5437 2009 40 120 BoxColFill
+.8007 g 1.000 5437 2128 40 120 BoxColFill
+.8343 g 1.000 5437 2247 40 119 BoxColFill
+.8595 g 1.000 5437 2365 40 120 BoxColFill
+.8925 g 1.000 5437 2484 40 120 BoxColFill
+.9116 g 1.000 5437 2603 40 120 BoxColFill
+.9359 g 1.000 5437 2722 40 119 BoxColFill
+.9536 g 1.000 5437 2840 40 120 BoxColFill
+.625 g 1.000 5476 703 40 120 BoxColFill
+.6164 g 1.000 5476 822 40 119 BoxColFill
+.6125 g 1.000 5476 940 40 120 BoxColFill
+.619 g 1.000 5476 1059 40 120 BoxColFill
+.6131 g 1.000 5476 1178 40 120 BoxColFill
+.6205 g 1.000 5476 1297 40 119 BoxColFill
+.6227 g 1.000 5476 1415 40 120 BoxColFill
+.6328 g 1.000 5476 1534 40 120 BoxColFill
+.6651 g 1.000 5476 1653 40 120 BoxColFill
+.6977 g 1.000 5476 1772 40 119 BoxColFill
+.732 g 1.000 5476 1890 40 120 BoxColFill
+.7741 g 1.000 5476 2009 40 120 BoxColFill
+.8113 g 1.000 5476 2128 40 120 BoxColFill
+.841 g 1.000 5476 2247 40 119 BoxColFill
+.8587 g 1.000 5476 2365 40 120 BoxColFill
+.9011 g 1.000 5476 2484 40 120 BoxColFill
+.9112 g 1.000 5476 2603 40 120 BoxColFill
+.9377 g 1.000 5476 2722 40 119 BoxColFill
+.9518 g 1.000 5476 2840 40 120 BoxColFill
+.6235 g 1.000 5515 703 40 120 BoxColFill
+.6193 g 1.000 5515 822 40 119 BoxColFill
+.6195 g 1.000 5515 940 40 120 BoxColFill
+.6169 g 1.000 5515 1059 40 120 BoxColFill
+.6159 g 1.000 5515 1178 40 120 BoxColFill
+.6209 g 1.000 5515 1297 40 119 BoxColFill
+.629 g 1.000 5515 1415 40 120 BoxColFill
+.6485 g 1.000 5515 1534 40 120 BoxColFill
+.6639 g 1.000 5515 1653 40 120 BoxColFill
+.698 g 1.000 5515 1772 40 119 BoxColFill
+.7313 g 1.000 5515 1890 40 120 BoxColFill
+.7696 g 1.000 5515 2009 40 120 BoxColFill
+.8134 g 1.000 5515 2128 40 120 BoxColFill
+.8376 g 1.000 5515 2247 40 119 BoxColFill
+.8733 g 1.000 5515 2365 40 120 BoxColFill
+.8952 g 1.000 5515 2484 40 120 BoxColFill
+.9162 g 1.000 5515 2603 40 120 BoxColFill
+.942 g 1.000 5515 2722 40 119 BoxColFill
+.9447 g 1.000 5515 2840 40 120 BoxColFill
+% End plot #1
+% Begin plot #2
+2.000 UP
+3.000 UL
+LTb
+0.00 0.00 0.00 C
+4129 1712 Circle
+% End plot #2
+% Begin plot #3
+2.600 UP
+3.000 UL
+LTb
+0.00 0.00 0.00 C
+5375 1014 Star
+% End plot #3
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+3738 2971 N
+0 -2280 V
+1836 0 V
+0 2280 V
+-1836 0 V
+Z stroke
+LCb setrgbcolor
+3273 1831 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 120.0 0.0 true true 0 (f)]
+[(Helvetica) 96.0 -36.0 true true 0 (imm)]
+] -28.0 MCshow
+grestore
+/Helvetica findfont 120 scalefont setfont
+LTb
+LCb setrgbcolor
+4656 328 M
+[ [(Helvetica) 120.0 0.0 true true 0 (t)]
+[(Helvetica) 96.0 -36.0 true true 0 (imm)]
+[(Helvetica) 120.0 0.0 true true 0 ( \(days\))]
+] -28.0 MCshow
+/Helvetica findfont 120 scalefont setfont
+LTb
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+4656 3161 M
+[ [(Helvetica-Bold) 130.0 0.0 true true 0 (Intradermal BCG \(n=5\))]
+] -43.3 MCshow
+/Helvetica findfont 120 scalefont setfont
+LTb
+grestore % colour palette end
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB} {ColorSpace (CMY) eq
+  {CMY2RGB} if} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .1667 .3333 .5 .6667 .8333 1 ] def
+/RedA [0 .2 .6 .7686 .9412 1 .7333 ] def
+/GreenA [.2 .4667 .6667 .7686 .6039 .2667 0 ] def
+/BlueA [.6667 1 1 .7686 .3608 .0824 .0275 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+5783 804 M
+63 0 V
+stroke
+5918 804 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 20)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5783 1371 M
+63 0 V
+stroke
+5918 1371 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 50)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5783 1800 M
+63 0 V
+stroke
+5918 1800 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 100)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5783 2230 M
+63 0 V
+stroke
+5918 2230 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 200)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5783 2797 M
+63 0 V
+stroke
+5918 2797 M
+[ [(Helvetica) 120.0 0.0 true true 0 ( 500)]
+] -40.0 MLshow
+/Helvetica findfont 120 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+5670 2971 N
+0 -2280 V
+113 0 V
+0 2280 V
+-113 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LTb
+0 g .025 g 1.000 5670 691 114 115 BoxColFill
+.075 g 1.000 5670 805 114 115 BoxColFill
+.125 g 1.000 5670 919 114 115 BoxColFill
+.175 g 1.000 5670 1033 114 115 BoxColFill
+.225 g 1.000 5670 1147 114 115 BoxColFill
+.275 g 1.000 5670 1261 114 115 BoxColFill
+.325 g 1.000 5670 1375 114 115 BoxColFill
+.375 g 1.000 5670 1489 114 115 BoxColFill
+.425 g 1.000 5670 1603 114 115 BoxColFill
+.475 g 1.000 5670 1717 114 115 BoxColFill
+.525 g 1.000 5670 1831 114 115 BoxColFill
+.575 g 1.000 5670 1945 114 115 BoxColFill
+.625 g 1.000 5670 2059 114 115 BoxColFill
+.675 g 1.000 5670 2173 114 115 BoxColFill
+.725 g 1.000 5670 2287 114 115 BoxColFill
+.775 g 1.000 5670 2401 114 115 BoxColFill
+.825 g 1.000 5670 2515 114 115 BoxColFill
+.875 g 1.000 5670 2629 114 115 BoxColFill
+.925 g 1.000 5670 2743 114 115 BoxColFill
+.975 g 1.000 5670 2857 114 115 BoxColFill
+% End plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+5670 2971 N
+0 -2280 V
+113 0 V
+0 2280 V
+-113 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica-Bold Helvetica

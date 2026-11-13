@@ -1,0 +1,10 @@
+Experiments at the fit-A optimum (10^4 simulated animals each); values at day 77 (mean ± SD)
+control            E_A    0.277  E_B    4.682  NC 12.02±4.27  NM 61.81±21.8  NMD 52.54±21  NMI 9.268±5.01  VFC 0.05667±0.0361  MAC 13.82±2.89
+immunosuppressed   E_A   80.790  E_B   82.760  NC 12.82±4.66  NM 26.16±11.2  NMD 24.27±10.9  NMI 1.89±1.82  VFC 0.2565±0.173  MAC 19.38±5.44
+dseg               E_A    3.375  E_B    4.829  NC 10.6±4.07  NM 52.59±19.6  NMD 40.83±18.6  NMI 11.76±5.7  VFC 0.0268±0.0171  MAC 11.85±2.36
+VFC day 21: control 0.0139, immunosuppressed 0.0136, dseg 0.0075
+VFC day 53: control 0.0563, immunosuppressed 0.1089, dseg 0.0265
+VFC day 77: control 0.0567, immunosuppressed 0.2565, dseg 0.0268
+Immunosuppressed / control VFC at day 77: 4.53x; control is 77.9 % lower
+Segment-limited / control VFC at day 77: 0.473 (-52.7 %)
+f_imm sweep (t_imm fixed): 0.206:0.0558, 0.248:0.0563, 0.290:0.0582, 0.331:0.0605, 0.373:0.0655, 0.415:0.0731, 0.457:0.0846, 0.498:0.0987, 0.540:0.1160, 0.582:0.1337, 0.624:0.1497, 0.666:0.1699, 0.707:0.1839, 0.749:0.1944, 0.791:0.2102, 0.833:0.2200, 0.875:0.2326, 0.916:0.2414, 0.958:0.2498, 1.000:0.2579

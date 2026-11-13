@@ -1,0 +1,28 @@
+Fits (refined optimum = lowest mean over 10 replicates of 10^4 simulated animals)
+Search box (all fits): v_0 [0.2, 1.7], f_imm [0.1, 1], R_max0 [1, 12], beta [0.005, 0.2], rho [0.1, 0.25], t_imm [14, 45], N_0 [12, 25]
+
+                              fitA        fitB       noimm      timm21
+objective                      E_A         E_B         E_A         E_A
+objective mean               0.276       1.193       5.530       3.750
+  sd (10 reps)               0.003       0.018       0.021       0.007
+  sigma_E pooled            0.0031      0.0157      0.0182      0.0098
+  best single eval           0.271       1.163       5.501       3.742
+evaluations (ok)         7664(7654)   7600(7585)   7582(7547)   7682(7675)
+errors at the optimum (mean of 10 reps):
+  nc                         0.056       0.207       0.735       0.048
+  nm                         0.042       0.034       4.247       0.317
+  nmi                        2.000       0.180       3.974       1.065
+  nmd                        2.414       0.077       2.376       1.111
+  vfc                        0.178       0.728       0.549       3.385
+  E_A                        0.276       0.969       5.530       3.750
+  E_B                        4.648       1.193       7.634       5.608
+parameters:
+  v_0                        1.583       1.469      0.8327      1.697*
+  f_imm                     0.2059      0.1233     1 (fix)      0.1562
+  R_max0                     4.789       8.374       2.833       7.885
+  beta                      0.1155      0.0582      0.1454      0.1458
+  rho                       0.1943      0.1583      0.2467     0.2489*
+  t_imm                       40.9       37.15    45 (fix)    21 (fix)
+  N_0                        12.79        13.4      12.08*       17.15
+* = within 2 % of the search range from a bound; (fix) = not free in this fit.
+Bounds hit: fitA: none; fitB: none; noimm: N_0 lower; timm21: v_0 upper, rho upper

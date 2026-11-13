@@ -1,0 +1,9 @@
+description = "Detection-threshold sensitivity at the fit-A optimum: micronodule min MA x consolidation min MA (mm)"
+type = "cases"
+base = "fitA"
+
+[[grid]]
+name = "thr"
+[grid.defs]          # compile-time overrides (include/main.h)
+MICRONOD_MIN_MAINAXIS = [0.5, 1.0, 1.5]
+CONS_MIN_MAINAXIS     = [3.5, 4.5, 5.5]

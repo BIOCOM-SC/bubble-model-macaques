@@ -1,0 +1,12 @@
+description = "Immunity on growth speed only vs on maximum radius only, at the fit-A optimum"
+type = "cases"
+base = "fitA"
+
+[[case]]
+name = "both"                                    # control: f_imm on v and on r_max
+[[case]]
+name = "speed_only"
+params = { frimm = 1 }                           # v = v0 f_imm, r_max = r0
+[[case]]
+name = "radius_only"
+params = { fvimm = 1, frimm = "base" }           # v = v0, r_max = r0 f_imm

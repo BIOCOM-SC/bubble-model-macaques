@@ -1,0 +1,47 @@
+description = "Alternative model without adaptive immunity (f_imm = 1): fit of E_A, 5 free parameters"
+type = "fit"
+
+[params]
+fvimm = 1
+frimm = 1
+tc    = 45        # no effect when f_imm = 1
+
+[fit]
+objective = "E_A"
+# (1) global DIRECT over the search box [fit.free]: see [fit.global] below
+starts    = 5              # (2) local DIRECT search around each of the 5 best distinct points of
+                           #     the global search (>= 2 x radius apart in some parameter: boxes do not overlap)
+radius    = 0.1            #     local box = start +- 0.1 x range (clipped to the search box)
+max_evals = 500            #     evaluations per local search; same DIRECT options as the global search
+                           #     (division, [fit.global] local_balance_parameter), so the local box is
+                           #     divided down to sides of 1/27 of the local box (0.74 % of each range,
+                           #     centres >= 0.25 % apart)
+method    = "coliny_direct"
+division  = "all_dimensions"  # Dakota coliny_direct: divide ALL longest sides of a box (Jones et al. 1993).
+                           #     Not the default "major_dimension" (SCOLIB "single"): its choice of the side
+                           #     to divide starts from the first parameter without checking that it is a
+                           #     longest side (SCOLIB Direct.cpp, Divider), so v0 was divided far more often
+                           #     than the others (down to 3^-15 of its range in 1800 evaluations).
+penalty   = 1.0e6          # returned to Dakota if the model aborts (MAX_* limits / 600 s); see driver.py
+refine_per_search = 10     # (3) re-evaluate the 10 best distinct points of EACH local search ...
+refine_reps = 10           #     ... 10 times each; optimum = minimum mean (launch.py refine)
+
+[fit.global]               # (1) global DIRECT (coliny_direct) over the whole search box
+max_evals = 5000           #     upper limit; run in chunks, extendable (restart replays dakota.rst)
+local_balance_parameter = 0.035   # SCOLIB max_boxsize_ratio (Dakota 6.21 COLINOptimizer.cpp maps
+                           #     local_balance_parameter -> max_boxsize_ratio): a box smaller than this
+                           #     fraction of the largest box (diagonal, unit-scaled) is not divided.
+                           #     Box-size ratios in DIRECT are discrete; 0.035 lies in the gap between
+                           #     0.0346 and 1/27 = 0.0370, so it means exactly "divide boxes down to 3
+                           #     trisection levels below the largest box" (any value in that gap acts
+                           #     the same). 3 levels = the coarsest grid (1/27 = 3.7 % of each range)
+                           #     finer than the local-search radius (0.1): 2 levels (1/9 = 11 %) is not.
+                           #     Finer resolution is left to the local searches. Jones's epsilon
+                           #     (global_balance_parameter) stays at its default (1e-8).
+
+[fit.free]                 # search box: name = [lower, upper] (Table-1 bounds)
+v0    = [0.2, 1.7]
+r0    = [1.0, 12.0]
+b     = [0.005, 0.2]
+nata  = [0.1, 0.25]
+n0    = [12.0, 25.0]

@@ -1,0 +1,8 @@
+Vaccinated comparison on the immgrid run (46 t_imm x 19 f_imm), other parameters at fit A
+Cell nearest fit A: t_imm 41, f_imm 0.20
+
+RUV: lowest E_A 0.283 at t_imm 41, f_imm 0.20; E_A at the fit-A cell 0.283
+RIDV: lowest E_A 16.666 at t_imm 9, f_imm 0.50; E_A at the fit-A cell 153.238
+RIDV, only f_imm free: t_imm 41, f_imm 0.30, E_A 152.493
+RIDV, only t_imm free: t_imm 10, f_imm 0.20, E_A 50.840
+RIDV, both free: t_imm 9, f_imm 0.50, E_A 16.666

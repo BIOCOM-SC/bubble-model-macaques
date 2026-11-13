@@ -1,0 +1,9 @@
+Sweeps around fit A (E_A* = 0.2762, sigma_E = 0.0031); range of each parameter with E_A <= E_A* + 2 sigma_E = 0.2824 (single evaluations, 10^4 animals each):
+  v_0     (opt 1.583): E_A from 0.275 to 1.540 over ±25 %; within 2σ: rel 0.987–1.013
+  f_imm   (opt 0.2059): E_A from 0.278 to 0.580 over ±25 %; within 2σ: rel 0.961–1.013
+  R_max0  (opt 4.789): E_A from 0.277 to 1.157 over ±25 %; within 2σ: rel 0.987–1.013
+  beta    (opt 0.1155): E_A from 0.278 to 3.258 over ±25 %; within 2σ: rel 0.987–0.987
+  rho     (opt 0.1943): E_A from 0.282 to 4.297 over ±25 %; no sweep point within 2σ
+  r_min   (opt 0.07): E_A from 0.276 to 0.467 over ±25 %; within 2σ: rel 0.987–1.066
+  N_0     (opt 12.79): E_A from 0.278 to 2.359 over ±25 %; within 2σ: rel 0.987–0.987
+  t_imm   (opt 40.9): E_A from 0.281 to 4.085 over ±25 %; within 2σ: rel 0.987–1.013

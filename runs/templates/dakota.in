@@ -1,0 +1,35 @@
+# Dakota input written by runs/launch.py for run '{name}' -- do not edit (edit runs/configs/{name}.toml)
+# DIRECT (coliny_direct); options from the run config (runs/configs).
+
+environment
+    tabular_data
+        tabular_data_file = 'dakota.tab'
+    output_file  = 'dakota.out'
+    error_file   = 'dakota.err'
+    results_output
+        results_output_file 'dakota_results'
+{restart}
+method,
+  {method}
+    max_iterations = {max_evals}
+    max_function_evaluations = {max_evals}
+{method_extra}
+variables
+    id_variables = 'VARIABLES'
+    continuous_design = {n_free}
+        descriptors    {descriptors}
+        lower_bounds   {lower}
+        upper_bounds   {upper}
+
+interface
+    fork
+        parameters_file = 'params.in'
+        results_file    = 'results.out'
+        analysis_drivers = '{driver}'
+
+responses
+    id_responses = 'RESPONSES'
+    objective_functions = 1
+    descriptors '{objective}'
+    numerical_gradients
+    no_hessians

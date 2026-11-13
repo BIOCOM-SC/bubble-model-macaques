@@ -1,0 +1,26 @@
+Virtual macaque lung: terminals of the bronchial tree vs lobe meshes
+terminals: 8233; lobe meshes: L1 1206 faces, L2 1330 faces, L3 1954 faces, L4 722 faces, L5 1164 faces, L6 960 faces, L7 2024 faces
+outside own lobe (model test, +x ray): 672 (8.2 %)
+outside own lobe (majority of 3 rays): 672 (8.2 %); terminals where the +x ray disagrees with the majority for some lobe: 1
+outside all lobes (majority): 542 (6.6 %)
+outside own lobe but inside another lobe: 130
+share of initial-infection probability on terminals outside their own lobe: 9.2 %
+dlobe of terminals outside their own lobe: median 0.82 mm, 90th percentile 4.41 mm, max 14.35 mm
+distance to own lobe mesh of terminals outside their own lobe: median 0.57 mm, within 1 mm 66 %, within 2 mm 82 %, 90th percentile 3.03 mm, max 13.57 mm; closer than their R_i: 77 %
+acceptance of a lesion position drawn around the terminal (fraction of its R_i ball inside its lobe, 200 points per terminal): terminals inside their lobe mean 0.95, outside mean 0.23 (171 of 672 never accepted)
+share of initial lesions seeded by terminals outside their own lobe: 2.2 % (p_initial_infection 9.2 %)
+dlobe (terminals.txt; distance to the nearest vertex of the original lobe surfaces, unsigned) is the model's cap on the lesion radius (-dlobe), not the distance to the lobe meshes above.
+Handling in the model: initial lesions are placed at a terminal drawn by p_initial_infection, displaced uniformly within R_i, and re-drawn until the position is inside the terminal's lobe (lesions.c); reinfections are re-drawn up to 10 times, then dropped (reinfection.c; not counted).
+
+terminal diameter d_i (mm): median 0.398, IQR 0.328–0.458, range 0.030–0.817
+irrigated radius R_i (mm): median 2.08, IQR 1.71–2.40, range 0.16–4.28
+distance to segment wall (dseg, mm): median 1.97, IQR 0.81–3.82
+distance to lobe wall (dlobe, mm): median 2.68, IQR 1.08–4.89
+per lobe (file L1..L7): terminals, outside own (model test), share of p_init, share of initial lesions seeded:
+  L1 RUL:  1295 terminals,   40 outside (3.1 %), p_init 10.7 %, seeded 11.4 %
+  L2 RML:  1310 terminals,  149 outside (11.4 %), p_init 4.2 %, seeded 4.1 %
+  L3 RLL:  2033 terminals,  152 outside (7.5 %), p_init 13.5 %, seeded 13.8 %
+  L4 LIC:   371 terminals,   37 outside (10.0 %), p_init 5.3 %, seeded 5.2 %
+  L5 LUL:   784 terminals,   89 outside (11.4 %), p_init 15.1 %, seeded 14.9 %
+  L6 LML:   441 terminals,   97 outside (22.0 %), p_init 14.4 %, seeded 12.4 %
+  L7 LLL:  1999 terminals,  108 outside (5.4 %), p_init 36.8 %, seeded 38.3 %

@@ -1,0 +1,30 @@
+# Cluster settings for runs/launch.py (Slurm). Copy to hpc_site.toml (next to this file, or one
+# level up, or point BM_HPC_SITE to it) and fill in. Keep the filled-in copy private.
+account          = "YOUR_ACCOUNT"
+qos              = "YOUR_PRODUCTION_QOS"     # fits, experiments, PRCC, sweeps
+qos_test         = "YOUR_DEBUG_QOS"          # `launch.py submit <name> --test`
+test_time        = "01:00:00"
+nodes            = 2
+ntasks_per_node  = 2         # MPI processes per node (paper: 2 x 56 threads on 112-core nodes)
+cpus_per_task    = 56        # OpenMP threads per MPI process
+modules          = ["intel", "impi", "python"]   # compiler for `make hpc` (mpiicx), MPI, python >= 3.11
+python           = "python3"
+launcher         = "srun"    # prefix of every model run
+dakota           = "/path/to/dakota/bin/dakota"  # Dakota >= 6.x (fits only)
+sbatch_extra     = []        # extra #SBATCH lines, e.g. ["--constraint=highmem"]
+
+[job_time]                    # Slurm time limit of each run (HH:MM:SS); `default` for runs not listed.
+default     = "12:00:00"      # Values used for the paper (2 nodes per job, 2 x 56 cores per node):
+chainA      = "16:00:00"      # a fit took 6-11 h, chainA (fit A + all case sets) ~15 h.
+fitB        = "16:00:00"      # A run that hits the limit continues when it is submitted again.
+noimm       = "16:00:00"
+timm21      = "16:00:00"
+fitA        = "16:00:00"
+thresholds  = "01:00:00"
+experiments = "02:00:00"
+immsplit    = "01:00:00"
+sweeps      = "03:00:00"
+immgrid     = "02:00:00"
+prcc        = "12:00:00"
+
+[env]                         # environment variables exported in every job, e.g. FOO = "bar"

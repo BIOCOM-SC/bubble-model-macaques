@@ -1,0 +1,13 @@
+# unpacked from lung/macaque/D.bin.xz (xz -dk lung/macaque/D.bin.xz)
+lung/macaque/D.bin
+# build outputs
+model/bubble-model
+model/*.dSYM/
+__pycache__/
+# run outputs and private cluster settings
+runs/work*/
+hpc_site.toml
+# office lock files
+~$*
+# MAC files
+.DS_Store

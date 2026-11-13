@@ -1,0 +1,4 @@
+# family fimm: experiments, parameter fvimm
+NFAM = 20
+array FF[20] = ["curves/experiments/fimm_01.dat", "curves/experiments/fimm_02.dat", "curves/experiments/fimm_03.dat", "curves/experiments/fimm_04.dat", "curves/experiments/fimm_05.dat", "curves/experiments/fimm_06.dat", "curves/experiments/fimm_07.dat", "curves/experiments/fimm_08.dat", "curves/experiments/fimm_09.dat", "curves/experiments/fimm_10.dat", "curves/experiments/fimm_11.dat", "curves/experiments/fimm_12.dat", "curves/experiments/fimm_13.dat", "curves/experiments/fimm_14.dat", "curves/experiments/fimm_15.dat", "curves/experiments/fimm_16.dat", "curves/experiments/fimm_17.dat", "curves/experiments/fimm_18.dat", "curves/experiments/fimm_19.dat", "curves/experiments/fimm_20.dat"]
+array FV[20] = [0.205926, 0.247719, 0.289513, 0.331306, 0.373099, 0.414893, 0.456686, 0.49848, 0.540273, 0.582066, 0.62386, 0.665653, 0.707446, 0.74924, 0.791033, 0.832827, 0.87462, 0.916413, 0.958207, 1]

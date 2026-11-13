@@ -1,0 +1,43 @@
+description = "Single-parameter sweeps (+-25 %, 20 values) around the fit-A optimum (supplementary figures)"
+type = "cases"
+base = "fitA"
+
+[[sweep]]
+name  = "sweep_v0"
+param = "v0"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_fvimm"
+param = "fvimm"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_r0"
+param = "r0"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_b"
+param = "b"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_nata"
+param = "nata"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_rmin"
+param = "rmin"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_n0"
+param = "n0"
+rel   = [0.75, 1.25, 20]
+
+[[sweep]]
+name  = "sweep_tc"
+param = "tc"
+rel   = [0.75, 1.25, 20]

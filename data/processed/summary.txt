@@ -1,0 +1,26 @@
+Experimental targets (mean +- SD), unvaccinated rhesus, n = 10 animals per time point
+Settings: '10+' daughters read as 10; SD ddof = 1
+Excluded: {'RUV05': 'miliary TB, outside the scope of the BM (as in Nogueira et al. 2023)'}
+
+                     day 21                day 53                day 77
+NC            8.4 +- 6.535          11.9 +- 7.125          11.9 +- 7.031  
+NM            6.6 +- 6.484          38.4 +- 25.56          61.8 +- 48.82  
+NMD             2 +- 3.972          24.2 +- 16.16          34.9 +- 26.84  
+NMI           4.6 +- 5.481          14.2 +- 15.55          26.9 +- 29.66  
+VFC        0.0117 +- 0.01464     0.04439 +- 0.03564     0.06154 +- 0.05066
+MAC         8.223 +- 2.52          13.62 +- 3.64          14.87 +- 4.003  
+
+Lobe frequency of consolidations at week 3: RUL 0.1069, RML 0.0416, RLL 0.1354, LIC 0.0529, LUL 0.1511, LML 0.1436, LLL 0.3684
+Mean SA/MA ratio: 0.7088
+
+Lung volumes (cm3, CT1):
+  RUV01: 247.6
+  RUV02: 187.7
+  RUV03: 232.4
+  RUV04: 197.9
+  RUV06: 247.1
+  RUV07: 241.8
+  RUV08: 248.0
+  RUV09: 305.1
+  RUV10: 310.2
+  RUV11: 248.8

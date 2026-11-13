@@ -1,0 +1,3 @@
+description = "One job: fit A, then every run that starts from the fit-A optimum (one queue wait)"
+type = "group"
+runs = ["fitA", "thresholds", "experiments", "immsplit", "sweeps", "immgrid", "prcc"]
