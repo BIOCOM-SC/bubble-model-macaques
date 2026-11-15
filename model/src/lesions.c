@@ -33,7 +33,7 @@ int is_inside_lesions(t_lesions *lesions, t_point point)
 }
 
 
-double limit_radius(double rmax, double frmax_dev, double dmax)
+double limit_radius(double rmax, double frmax_dev, double dmax)  // N(rmax, frmax_dev * rmax), within [rmin, dmax]
 {
     double rtrial = normal_distribution(rmax, rmax * frmax_dev);
     if (rtrial < params.rmin) rtrial = params.rmin;
@@ -45,6 +45,7 @@ double limit_radius(double rmax, double frmax_dev, double dmax)
 void initialize_lesions(t_lesions *lesions)
 {
     int N_init = (int)round( normal_distribution(params.n0, params.n0 * params.fndev) );
+    if (N_init < 0) N_init = 0;  // N = max{round(N(N0, Ndev)), 0}
     for (int ii=0; ii<N_init; ii++) {
         int trial_term_id;
         t_point trial_pos;
@@ -68,7 +69,7 @@ void initialize_lesions(t_lesions *lesions)
         } while (!(is_inside_lobe(lung.terminals[trial_term_id].lobe, trial_pos) == 1 && \
                  is_inside_lesions(lesions, trial_pos) == 0));
         
-        double rmax = limit_radius(params.r0, params.r0 * params.fr0dev, lung.terminals[trial_term_id].dmax);
+        double rmax = limit_radius(params.r0, params.fr0dev, lung.terminals[trial_term_id].dmax);
         write_lesion(&lesions->arr[ii], 0, params.rmin, trial_pos, \
                      rmax, params.v0, trial_term_id, lung.terminals[trial_term_id].lobe, 0);
     }
@@ -118,11 +119,11 @@ void activate_immune(t_lesions *lesions)
 void determine_rmax_v_immune(int immune_state, double dmax, double *rmax, double *v)
 {
     if (immune_state == 0) {
-        *rmax = limit_radius(params.r0, params.r0 * params.fr0dev, dmax);
+        *rmax = limit_radius(params.r0, params.fr0dev, dmax);
         *v = params.v0;
     }
     else {
-        *rmax = limit_radius(params.r0 * params.frimm, params.r0 * params.frimm * params.frimmdev, dmax);
+        *rmax = limit_radius(params.r0 * params.frimm, params.frimmdev, dmax);
         *v = params.v0 * params.fvimm;
     }
 }

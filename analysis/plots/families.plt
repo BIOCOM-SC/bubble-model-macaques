@@ -9,7 +9,7 @@ do for [tag in "fimm sweep_v0 sweep_fvimm sweep_r0 sweep_b sweep_nata sweep_rmin
     undefine YMAX CBTICS CBFMT
     CBFMT = "%.2f"
     if (tag eq "fimm")       { name = "exp_fimm_all"; CBLAB = "f_{imm}"; \
-        array YMAX[6] = [30, 160, 0.4, 100, 100, 30] }
+        array YMAX[6] = [30, 160, 0.5, 80, 60, 35] }
     if (tag eq "sweep_v0")    { name = tag; CBLAB = "v_0 (day^{-1})" }
     if (tag eq "sweep_fvimm") { name = "sweep_fimm"; CBLAB = "f_{imm}"; CBFMT = "%.3f" }
     if (tag eq "sweep_r0")    { name = "sweep_rmax"; CBLAB = "R_{max 0} (mm)" }
@@ -19,7 +19,7 @@ do for [tag in "fimm sweep_v0 sweep_fvimm sweep_r0 sweep_b sweep_nata sweep_rmin
     if (tag eq "sweep_n0")    { name = tag; CBLAB = "N_0"; CBFMT = "%.1f" }
     if (tag eq "sweep_tc")    { name = "sweep_timm"; CBLAB = "t_{imm} (days)"; CBFMT = "%.1f" }
     if (strstrt(tag, "sweep_") == 1) { \
-        CBTICS = (FV[NFAM] - FV[1]) / 11 }
+        CBTICS = (FV[NFAM] - FV[1]) / 11; array YMAX[6] = [30, 160, 0.15, 100, 60, 30] }
     eval term(6, 4)
     set output out(name)
     load "family6.gp"

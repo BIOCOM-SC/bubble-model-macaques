@@ -1,28 +1,28 @@
 Fits (refined optimum = lowest mean over 10 replicates of 10^4 simulated animals)
-Search box (all fits): v_0 [0.2, 1.7], f_imm [0.1, 1], R_max0 [1, 12], beta [0.005, 0.2], rho [0.1, 0.25], t_imm [14, 45], N_0 [12, 25]
+Search box (all fits): v_0 [0.2, 1.7], f_imm [0.1, 1], R_max0 [1, 12], beta [0.005, 0.2], rho [0.1, 0.25], t_imm [14, 45], N_0 [5, 25]
 
                               fitA        fitB       noimm      timm21
 objective                      E_A         E_B         E_A         E_A
-objective mean               0.276       1.193       5.530       3.750
-  sd (10 reps)               0.003       0.018       0.021       0.007
-  sigma_E pooled            0.0031      0.0157      0.0182      0.0098
-  best single eval           0.271       1.163       5.501       3.742
-evaluations (ok)         7664(7654)   7600(7585)   7582(7547)   7682(7675)
+objective mean               0.220       1.312       5.562       3.657
+  sd (10 reps)               0.002       0.013       0.011       0.007
+  sigma_E pooled            0.0035      0.0150      0.0176      0.0061
+  best single eval           0.217       1.285       5.557       3.649
+evaluations (ok)         7632(7589)   7622(7574)   7570(7509)   7660(7626)
 errors at the optimum (mean of 10 reps):
-  nc                         0.056       0.207       0.735       0.048
-  nm                         0.042       0.034       4.247       0.317
-  nmi                        2.000       0.180       3.974       1.065
-  nmd                        2.414       0.077       2.376       1.111
-  vfc                        0.178       0.728       0.549       3.385
-  E_A                        0.276       0.969       5.530       3.750
-  E_B                        4.648       1.193       7.634       5.608
+  nc                         0.039       0.138       0.781       0.050
+  nm                         0.023       0.028       3.953       0.246
+  nmi                        2.538       0.061       3.933       2.111
+  nmd                        2.966       0.119       1.990       2.158
+  vfc                        0.159       0.994       0.828       3.361
+  E_A                        0.220       1.159       5.562       3.657
+  E_B                        5.701       1.312       7.533       7.680
 parameters:
-  v_0                        1.583       1.469      0.8327      1.697*
-  f_imm                     0.2059      0.1233     1 (fix)      0.1562
-  R_max0                     4.789       8.374       2.833       7.885
-  beta                      0.1155      0.0582      0.1454      0.1458
-  rho                       0.1943      0.1583      0.2467     0.2489*
-  t_imm                       40.9       37.15    45 (fix)    21 (fix)
-  N_0                        12.79        13.4      12.08*       17.15
+  v_0                        1.309       1.098      0.9278      1.699*
+  f_imm                     0.1756     0.1178*     1 (fix)      0.1867
+  R_max0                     5.522       9.325       2.589       5.848
+  beta                      0.1155     0.05435      0.1473      0.1714
+  rho                       0.2139       0.205      0.2424      0.249*
+  t_imm                      36.01       30.19   100 (fix)    21 (fix)
+  N_0                        9.963       9.074       10.06       12.53
 * = within 2 % of the search range from a bound; (fix) = not free in this fit.
-Bounds hit: fitA: none; fitB: none; noimm: N_0 lower; timm21: v_0 upper, rho upper
+Bounds hit: fitA: none; fitB: f_imm lower; noimm: none; timm21: v_0 upper, rho upper

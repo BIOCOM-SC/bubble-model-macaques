@@ -15,6 +15,6 @@ array MDT[3] = [1, 1, 1]
 array MB[3]  = [0, 0, 1]
 KEYFIRST = 1
 KEYTITLE = "Best fit with (t_{imm}, f_{imm}):"
-DATAT = "Intradermal BCG"
+DATAT = "Intradermal BCG (n=5)"
 EXPF = "exp_ridv.dat"
 load "panels6.gp"

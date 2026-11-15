@@ -24,12 +24,12 @@ STARW = "w p pt 3 ps 2.6 lw 8 lc rgb 'white' notitle"
 NEAR = "w p pt 6 ps 1.2 lw 2 lc rgb 'black' notitle"
 
 set xlabel "N_0"
-set xrange [11.8:14.7]
-set xtics 12,1,14
+set xrange [9.2:10.6]
+set xtics 9.2,0.4,10.6
 set title "N_0 vs v_0"
 eval panel_label("A")
-set yrange [1.1:1.75]
-set ytics 0.1
+set yrange [1.2:1.4]
+set ytics 0.05
 set ylabel "v_0 (day^{-1})" offset 1,0
 plot F u ($8 < THR*E0 ? $7 : NaN):1:8 w p pt 7 ps 0.6 lc palette notitle, \
      G u 7:1 @NEAR, \
@@ -38,8 +38,8 @@ plot F u ($8 < THR*E0 ? $7 : NaN):1:8 w p pt 7 ps 0.6 lc palette notitle, \
 
 set title "N_0 vs R_{max 0}"
 eval panel_label("B")
-set yrange [3.2:7.2]
-set ytics 1
+set yrange [5.2:6.0]
+set ytics 0.2
 set ylabel "R_{max 0} (mm)" offset 1,0
 plot F u ($8 < THR*E0 ? $7 : NaN):3:8 w p pt 7 ps 0.6 lc palette notitle, \
      G u 7:3 @NEAR, \
@@ -49,11 +49,11 @@ plot F u ($8 < THR*E0 ? $7 : NaN):3:8 w p pt 7 ps 0.6 lc palette notitle, \
 set title "v_0 vs R_{max 0}"
 eval panel_label("C")
 set colorbox user origin 0.90, 0.18 size 0.015, 0.68
-set xrange [1.1:1.75]
-set xtics 0.2
+set xrange [1.2:1.4]
+set xtics 0.05
 set xlabel "v_0 (day^{-1})"
-set yrange [3.2:7.2]
-set ytics 1
+set yrange [5.2:6.0]
+set ytics 0.2
 set ylabel "R_{max 0} (mm)" offset 1,0
 plot F u ($8 < THR*E0 ? $1 : NaN):3:8 w p pt 7 ps 0.6 lc palette notitle, \
      G u 1:3 @NEAR, \

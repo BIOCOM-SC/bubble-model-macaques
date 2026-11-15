@@ -7,7 +7,7 @@ eval term(6, 5.4)
 set output out("evolution_min_error")
 array FIT[4] = ["fitA", "fitB", "noimm", "timm21"]
 array FT[4]  = ["Fit A (E_A)", "Fit B (E_B)", "No immunity (E_A)", "t_{imm} = 21 d (E_A)"]
-array YR0[4] = [0.25, 1.0, 5.2, 3.3]
+array YR0[4] = [0.2, 1.0, 5.2, 3.3]
 array YR1[4] = [0.7, 2.5, 7.0, 5.0]
 PLX = -0.12
 array LC[5]  = ["#0072B2", "#D55E00", "#E69F00", "#009E73", "#CC79A7"]

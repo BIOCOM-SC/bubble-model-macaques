@@ -1,4 +1,4 @@
 # family sweep_tc: sweeps, parameter tc
 NFAM = 20
 array FF[20] = ["curves/sweeps/sweep_tc_01.dat", "curves/sweeps/sweep_tc_02.dat", "curves/sweeps/sweep_tc_03.dat", "curves/sweeps/sweep_tc_04.dat", "curves/sweeps/sweep_tc_05.dat", "curves/sweeps/sweep_tc_06.dat", "curves/sweeps/sweep_tc_07.dat", "curves/sweeps/sweep_tc_08.dat", "curves/sweeps/sweep_tc_09.dat", "curves/sweeps/sweep_tc_10.dat", "curves/sweeps/sweep_tc_11.dat", "curves/sweeps/sweep_tc_12.dat", "curves/sweeps/sweep_tc_13.dat", "curves/sweeps/sweep_tc_14.dat", "curves/sweeps/sweep_tc_15.dat", "curves/sweeps/sweep_tc_16.dat", "curves/sweeps/sweep_tc_17.dat", "curves/sweeps/sweep_tc_18.dat", "curves/sweeps/sweep_tc_19.dat", "curves/sweeps/sweep_tc_20.dat"]
-array FV[20] = [30.6787, 31.7551, 32.8316, 33.908, 34.9845, 36.0609, 37.1374, 38.2138, 39.2903, 40.3667, 41.4432, 42.5196, 43.5961, 44.6725, 45.7489, 46.8254, 47.9018, 48.9783, 50.0547, 51.1312]
+array FV[20] = [27.0046, 27.9522, 28.8997, 29.8472, 30.7948, 31.7423, 32.6898, 33.6373, 34.5849, 35.5324, 36.4799, 37.4275, 38.375, 39.3225, 40.2701, 41.2176, 42.1651, 43.1127, 44.0602, 45.0077]

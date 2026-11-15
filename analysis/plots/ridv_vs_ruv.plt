@@ -4,7 +4,7 @@
 load "common.gp"
 eval term(6, 4)
 set output out("ridv_vs_ruv")
-array YMAX[6] = [30, 160, 0.15, 100, 100, 30]
+array YMAX[6] = [30, 160, 0.15, 80, 60, 30]
 set title font TFONT
 set multiplot layout 2,3 columns rowsfirst
 set grid lc rgb "gray" lw 1

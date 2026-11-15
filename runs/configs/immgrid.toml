@@ -1,6 +1,9 @@
 description = "t_imm x f_imm grid at the fit-A optimum (stronger vs earlier immunity): Fig. 4 and the vaccinated-macaque comparison"
 type = "cases"
 base = "fitA"
+# f_imm = 1 column: t_imm past t_max = 80 d, so that no immune activation happens (it would redraw
+# the maximum radii of all lesions at t_imm); this column is then "no immune response"
+tc_no_immunity = 100
 
 # t_imm 0-45 d, step 1 d: 0 = immunity active from infection; 45 = upper bound of the fits (Table 1),
 # so the unvaccinated optimum (39.8) is interior. The response changes fastest at t_imm < 15 d

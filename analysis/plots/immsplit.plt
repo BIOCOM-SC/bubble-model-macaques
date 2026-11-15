@@ -10,5 +10,5 @@ array MT[3]  = ["Speed and radius (fit A)", "Growth speed only", "Maximum radius
 array MC[3]  = [C_BLUE, C_YELLOW, C_PURPLE]
 array MDT[3] = [1, 1, 1]
 array MB[3]  = [1, 1, 1]
-array YMAX[6] = [30, 160, 0.4, 140, 100, 30]   # common scale, VFC up to 0.4, NMD up to 140
+array YMAX[6] = [30, 160, 0.4, 140, 60, 30]   # common scale, VFC up to 0.4, NMD up to 140
 load "panels6.gp"

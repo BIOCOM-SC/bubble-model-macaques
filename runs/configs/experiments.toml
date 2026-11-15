@@ -1,6 +1,9 @@
 description = "In-silico experiments at the fit-A optimum: control, immunosuppressed, f_imm sweep, segment walls (the t_imm effect is covered by immgrid)"
 type = "cases"
 base = "fitA"
+# f_imm = 1 (immunosuppressed, last point of the f_imm sweep): t_imm past t_max = 80 d, so that no
+# immune activation happens (it would redraw the maximum radii of all lesions at t_imm)
+tc_no_immunity = 100
 
 [[case]]
 name = "control"

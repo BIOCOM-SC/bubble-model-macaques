@@ -22,11 +22,11 @@ array PCOL[6]   = [2, 4, 10, 6, 8, 12]
 array PTITLE[6] = ["Consolidations (NC)", "Micronodules (NM)", "Vol. occupied by consol. (VFC)", \
                    "Daughter micronodules (NMD)", "Isolated micronodules (NMI)", "Main axis of consolidations (MAC)"]
 array PYLAB[6]  = ["Number", "Number", "Lung volume fraction", "Number", "Number", "Main axis (mm)"]
-array PYMAX[6]  = [30, 160, 0.15, 100, 100, 30]   # common scale of all six-panel figures
+array PYMAX[6]  = [30, 160, 0.15, 80, 60, 30]     # common scale of all six-panel figures
 array PLAB[6]   = ["A", "B", "C", "D", "E", "F"]
 
 XLAB = "time (days)"
-DATAT = "Experimental"
+DATAT = "Unvaccinated (n=10)"
 SKIPEB = 12        # model error bars (± SD) every 12 days
 
 # panel label (reviewer request): call  eval panel_label("A")

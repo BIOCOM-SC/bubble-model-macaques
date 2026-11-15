@@ -431,6 +431,10 @@ def generate_cases(cfg, root):
             p[k] = _value(v, k, base) if isinstance(v, str) else float(v)
             explicit.add(k)
         apply_tied(p, tied, explicit)
+        # No immune response (f_imm = 1): optionally move t_imm past t_max, so that the maximum
+        # radii of existing lesions are not redrawn at t_imm (activate_immune, src/lesions.c).
+        if "tc_no_immunity" in cfg and p["fvimm"] == 1 and p["frimm"] == 1:
+            p["tc"] = float(cfg["tc_no_immunity"])
         cases.append({"id": len(cases) + 1, "name": name, "params": p,
                       "domain": domain or domain0, "defs": {**cfg.get("defs", {}), **(defs or {})}})
 

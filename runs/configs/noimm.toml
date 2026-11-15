@@ -4,7 +4,7 @@ type = "fit"
 [params]
 fvimm = 1
 frimm = 1
-tc    = 45        # no effect when f_imm = 1
+tc    = 100       # past t_max = 80 d: no immune activation (it would redraw the maximum radii at t_imm)
 
 [fit]
 objective = "E_A"
@@ -44,4 +44,4 @@ v0    = [0.2, 1.7]
 r0    = [1.0, 12.0]
 b     = [0.005, 0.2]
 nata  = [0.1, 0.25]
-n0    = [12.0, 25.0]
+n0    = [5.0, 25.0]

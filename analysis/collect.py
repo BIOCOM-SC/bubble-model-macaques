@@ -275,6 +275,17 @@ def config_case_names(run):
     return {c["name"] for c in bm.generate_cases(bm.load_config(run), WORK)}
 
 
+def grid_position(run):
+    """(t_imm, f_imm) of each grid case by name, as on the grid axes: the f_imm = 1 cases run with
+    t_imm past t_max (tc_no_immunity), but keep their place on the t_imm axis."""
+    sys.path.insert(0, str(ROOT / "runs"))
+    import bm
+    cfg = bm.load_config(run)
+    cfg.pop("tc_no_immunity", None)
+    return {c["name"]: (float(c["params"]["tc"]), round(float(c["params"]["fvimm"]), 6))
+            for c in bm.generate_cases(cfg, WORK)}
+
+
 def cases(run):
     """Cases of a `cases` run that are in its current config -> data/curves/<run>/<name>.dat;
     returns the cases_out rows."""
@@ -330,9 +341,10 @@ def experiments():
 def immgrid():
     """t_imm x f_imm grid: day-77 values of each metric, gnuplot grid format (blank line per tc)."""
     rows = cases("immgrid")
-    tcs = sorted({float(r["tc"]) for r in rows})
-    fs = sorted({float(r["fvimm"]) for r in rows})
-    by = {(float(r["tc"]), float(r["fvimm"])): r for r in rows}
+    pos = grid_position("immgrid")
+    tcs = sorted({pos[r["name"]][0] for r in rows})
+    fs = sorted({pos[r["name"]][1] for r in rows})
+    by = {pos[r["name"]]: r for r in rows}
     with open(DATA / "immgrid.dat", "w") as f:
         f.write("# t_imm f_imm E_A E_B " + " ".join(f"{m}77 sd" for m in METRICS) +
                 " status (NaN = case aborted: one simulated animal reached a model safety limit, MAX_* in main.h)\n")
@@ -384,9 +396,10 @@ def vaccinated():
     exp_ruv = read_targets(TARGETS, DAYS)
     names = config_case_names("immgrid")
     rows = [r for r in read_csv(WORK / "immgrid" / "cases_out.csv") if r["name"] in names]
-    rows.sort(key=lambda r: (float(r["tc"]), float(r["fvimm"])))
-    tc = np.array([float(r["tc"]) for r in rows])
-    fv = np.array([round(float(r["fvimm"]), 6) for r in rows])
+    pos = grid_position("immgrid")
+    rows.sort(key=lambda r: pos[r["name"]])
+    tc = np.array([pos[r["name"]][0] for r in rows])
+    fv = np.array([pos[r["name"]][1] for r in rows])
     E = {"ruv": [], "ridv": []}
     for r in rows:
         c = np.loadtxt(DATA / "curves" / "immgrid" / f"{r['name']}.dat")
