@@ -51,7 +51,11 @@ Each item: paper figure - script in `plots/` -> figure in `out/`; data in `data/
   `exp_ridv.dat`, `vaccinated_err.dat`, `vaccinated.gp` (`vaccinated`)
 - Suppl., PRCC - `prcc.plt` -> `prcc`, `prcc_final`; `prcc_*.dat` (`prcc`)
 
-Fig. 1 (the virtual lung) and Fig. 5 (distances in the bronchial tree) are illustrations, not
+- Fig. 1C, one simulated animal at day 50 - `lung_lesions.plt` -> `lung_lesions.pdf` (PDF only:
+  transparency); `lesions_day50/seed16.txt`, written by the model with
+  `-noplot -dlobe -N 1 -seed 16 -snapshot 50` and the fit-A optimum, and the lobes in `lung/`
+
+Fig. 1A-B (the virtual lung) and Fig. 5 (distances in the bronchial tree) are illustrations, not
 made from these data.
 
 Numbers quoted in the text (`tables/`): `table1.txt` (Table 1), `fits.txt` (errors and noise of

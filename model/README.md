@@ -39,6 +39,9 @@ mpirun -n 1 /path/to/model/bubble-model -noplot -dlobe -N 10000 -seed 1
 - `-noplot`: no plot window at the end.
 - `-server <dir>`: stay running and answer evaluation requests in `<dir>` (used by `runs/launch.py`;
   avoids reading the lung for every evaluation).
+- `-snapshot <day>`: with `-N 1` and one process, also write the lesions of that simulated animal
+  at the end of day `<day>` to `results/lesions_day<day>.txt` (radius, centre, lobe; used for
+  Fig. 1C). The other outputs are unchanged.
 
 The remaining options in `src/main.c` (`-debug_seq`, `-debug_par`, `-pin`, `-video`,
 `-write_sample`, `-append`, `-human`) are development options not used in the paper (`-human`

@@ -12,6 +12,23 @@
 #include "lung.h"
 
 
+// Lesions of the simulation at the end of a given day (-snapshot <day>): radius and centre (mm)
+static void write_snapshot(t_lesions *lesions, int day)
+{
+    char fname[256];
+    snprintf(fname, sizeof(fname), FILE_SNAPSHOT, day);
+    FILE *f = fopen(fname, "w");
+    if (!f) display_and_exit("ERROR!! Cannot open the snapshot file\n");
+    fprintf(f, "# lesions at the end of day %d (seed %llu), one per line: r x y z (mm), lobe\n",
+            day, (unsigned long long)simu.seed);
+    for (int ii=0; ii<lesions->N; ii++) {
+        t_single_lesion *l = &lesions->arr[ii];
+        fprintf(f, "%.6f %.6f %.6f %.6f %d\n", l->r, l->pos.x, l->pos.y, l->pos.z, l->lobe);
+    }
+    fclose(f);
+}
+
+
 // SIMULATION ORCHESTRATION:
 int simulations_parallel(t_results *results_tot, t_limit_simu *limit_simu_tot) 
 {
@@ -264,6 +281,7 @@ int simulation(t_results *results, t_limit_simu *limit_simu)
 
         if ( (int)t < (int)(t+params.dt) ) {
           save_info(lesions, N_fusions, N_intra, N_extra, (int)t, results );
+          if (simu.snapshot_day == (int)t + 1) write_snapshot(lesions, simu.snapshot_day);  // row (int)t = end of day (int)t + 1
           if (reached_maximum(results, t, limit_simu)) return ERROR;
         }
 

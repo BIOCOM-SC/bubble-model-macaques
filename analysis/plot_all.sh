@@ -14,7 +14,7 @@ if [ "$1" != "--plots" ]; then
 else
     shift
 fi
-SCRIPTS=${*:-"fits experiments immgrid ridv_vs_ruv ridv_heatmap ridv_fits families alternatives immsplit thresholds sweeps_err prcc minerr tradeoff per_animal lung_qc"}
+SCRIPTS=${*:-"fits experiments immgrid ridv_vs_ruv ridv_heatmap ridv_fits families alternatives immsplit thresholds sweeps_err prcc minerr tradeoff per_animal lung_qc lung_lesions"}
 mkdir -p out
 cd plots
 for f in $SCRIPTS; do gnuplot $f.plt; done

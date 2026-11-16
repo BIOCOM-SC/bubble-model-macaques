@@ -24,6 +24,7 @@
 #define FILE_ERROR "./results/error.txt"
 #define FILE_PRCC "./results/prcc.txt"
 #define FILE_VIDEOS "./results/video.txt"
+#define FILE_SNAPSHOT "./results/lesions_day%d.txt"
 
 #define MAX_NUM_TERMINALS 12000
 #define MAX_DAYS 100
@@ -90,6 +91,7 @@ typedef struct t_exec_config{
     int append;
     int is_human;
     int plot;
+    int snapshot_day;  // -snapshot <day>: write the lesions at the end of that day (needs -N 1)
 } t_exec_config;
 
 

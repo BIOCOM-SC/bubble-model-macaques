@@ -64,6 +64,8 @@ void read_args(int argc, char **argv)
             } else if (strcmp(argv[ii], "-seed") == 0 ) {
                 simu.seed = strtoull(argv[ii+1], NULL, 10);
                 simu.seed_given = 1;
+            } else if (strcmp(argv[ii], "-snapshot") == 0 ) {
+                simu.snapshot_day = atoi(argv[ii+1]);
             } else if (strcmp(argv[ii], "-server") == 0 ) {
                 if (ii+1 >= argc || !realpath(argv[ii+1], server_dir))
                     display_and_exit("ERROR!! -server <dir>: directory not found\n");
@@ -442,6 +444,8 @@ int main(int argc, char **argv)
 
     read_args(argc, argv);
     if (simu.write_sample != 0) write_sample_and_exit(rank_MPI);  // Special case
+    if (simu.snapshot_day != 0 && (simu.N_tot != 1 || size_MPI != 1 || simu.server))
+        display_and_exit("ERROR!! -snapshot <day> needs -N 1, one MPI process and no -server\n");
 
     // Set-up, once (also in server mode): lung, memory pool, result buffers
     out = malloc_and_read_lung();
