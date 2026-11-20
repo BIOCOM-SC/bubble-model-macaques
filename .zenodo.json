@@ -1,0 +1,32 @@
+{
+  "upload_type": "software",
+  "title": "Bubble Model - TB lesions in rhesus macaques: code and data",
+  "description": "<p>Code and data of the paper <em>Assessment of protective mechanisms in the evolution of Mycobacterium tuberculosis infection in rhesus macaques using a parameterized computational model</em> (F. Muñoz, M. Català, I. Nogueira, B. Eguzkitza, S. Sharpe, C. Prats, P.-J. Cardona; Scientific Reports, 2026).</p><p>The Bubble Model simulates the growth, merging and spread of tuberculosis lesions in a virtual macaque lung. The repository contains the experimental data and the script that turns them into the model's targets, the virtual macaque lung, the model source code (C, MPI + OpenMP), the configuration and launcher of every simulation run of the paper (fits, experiments, sweeps, PRCC), and the scripts that collect the results and draw every figure.</p><p>Licences: code under the MIT licence. CT lesion data: Nogueira et al., Pathogens 12, 236 (2023), Supplementary File S2, redistributed unchanged under CC BY 4.0. Lung volumes: provided by the authors of Nogueira et al. (2023), reproduced with permission.</p>",
+  "creators": [
+    {"name": "Muñoz, Fernando", "affiliation": "Universitat Politècnica de Catalunya"},
+    {"name": "Català, Martí", "affiliation": "University of Oxford"},
+    {"name": "Nogueira, Isabel", "affiliation": "Hospital Universitari Germans Trias i Pujol"},
+    {"name": "Eguzkitza, Beatriz", "affiliation": "Barcelona Supercomputing Center"},
+    {"name": "Sharpe, Sally", "affiliation": "UK Health Security Agency"},
+    {"name": "Prats, Clara", "affiliation": "Universitat Politècnica de Catalunya"},
+    {"name": "Cardona, Pere-Joan", "affiliation": "Hospital Universitari Germans Trias i Pujol"}
+  ],
+  "license": "MIT",
+  "keywords": [
+    "tuberculosis",
+    "Mycobacterium tuberculosis",
+    "rhesus macaques",
+    "computational model",
+    "agent-based model",
+    "lung lesions",
+    "computed tomography"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.3390/pathogens12020236",
+      "relation": "isDerivedFrom",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ]
+}
