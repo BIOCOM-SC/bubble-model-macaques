@@ -1,6 +1,6 @@
 # Supplementary: objective E_A along each single-parameter sweep (+-25 % around fit A, 20 values,
 # one evaluation of 10^4 simulated animals each) compared with the noise of the objective:
-# grey band = E_A* +- 2 sigma_E (refined fit-A optimum and pooled replicate SD).
+# grey band = E_A* +- 2 sigma_E (refined fit-A optimum and the SD of its 10 replicates).
 load "common.gp"
 eval term(6, 3.4)
 set output out("sweeps_err")

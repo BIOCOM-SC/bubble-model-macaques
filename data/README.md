@@ -9,7 +9,8 @@
   number of daughter lesions, volume, main and short axis), and one sheet per animal with the
   isolated micronodules per segment ("Isol Mic").
 - `lung_volumes.csv` - lung volume of each animal at the first CT (week 3), in cm^3, used for the
-  volume fraction of consolidations (VFC). Provided by the authors of Nogueira et al. (2023).
+  volume fraction of consolidations (VFC). Provided by the authors of Nogueira et al. (2023),
+  reproduced with permission.
 
 ## Processing
 

@@ -56,8 +56,8 @@ or re-submitting a run continues it: fits restart the unfinished DIRECT search f
 
 ## How a fit works
 
-Each evaluation averages 10^4 simulations, so the objective is noisy (SD ~ 0.004 at the fit-A
-optimum, E_A ~ 0.28). A fit has three steps:
+Each evaluation averages 10^4 simulations, so the objective is noisy (SD ~ 0.002 at the fit-A
+optimum, E_A ~ 0.22). A fit has three steps:
 
 1. **Global DIRECT** (Dakota `coliny_direct`) over the whole search box, in `global/`, at most
    5000 evaluations. `local_balance_parameter = 0.035` stops dividing boxes three trisection

@@ -83,12 +83,15 @@ Then `cd analysis && ./plot_all.sh` collects the new outputs and redraws all fig
 - CT lesion data: Nogueira, I. *et al.* Pathogens **12**, 236 (2023),
   [doi:10.3390/pathogens12020236](https://doi.org/10.3390/pathogens12020236), Supplementary File S2,
   redistributed unchanged under its CC BY 4.0 licence.
-- Lung volumes (one per animal, CT at week 3): provided by the authors of Nogueira et al. (2023).
+- Lung volumes (`data/raw/lung_volumes.csv`, one per animal, CT at week 3): provided by the authors
+  of Nogueira et al. (2023), reproduced with permission.
 - Virtual lung: described in the Methods of the paper.
 
 ## Licence
 
-Code: MIT (see `LICENSE`). Third-party data in `data/raw/`: CC BY 4.0, as stated above.
+Code: MIT (see `LICENSE`). CT lesion data (`data/raw/NogueiraSuppl_File_2_RawData.xlsx`):
+CC BY 4.0, as stated above. Lung volumes (`data/raw/lung_volumes.csv`): reproduced with permission
+of the authors of Nogueira et al. (2023).
 
 ## Citation
 

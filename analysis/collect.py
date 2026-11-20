@@ -165,7 +165,7 @@ def fits():
     pa = by["fitA"]["params"]
     with open(DATA / "fit_values.gp", "w") as f:
         f.write("# written by collect.py (fits): optima used in figure labels and markers\n")
-        f.write(f"E0 = {by['fitA']['value']:.6g}\nSIGE = {by['fitA']['sigma_pooled']:.6g}\n")
+        f.write(f"E0 = {by['fitA']['value']:.6g}\nSIGE = {by['fitA']['sd']:.6g}\n")
         f.write(f"TFIT = {pa['tc']:.6g}; FFIT = {pa['fvimm']:.6g}\n")
         f.write(f"N0F = {pa['n0']:.6g}; V0F = {pa['v0']:.6g}; R0F = {pa['r0']:.6g}; BFIT = {pa['b']:.6g}\n")
         for k in FITS:
@@ -463,7 +463,7 @@ def sweeps():
     """Single-parameter sweeps (+-25 %, 20 values): curves + objective vs parameter."""
     rows = cases("sweeps")
     fitA = json.loads((WORK / "fitA" / "best.json").read_text())
-    p0, sig = fitA["params"], fitA["refine"]["sigma_pooled"]
+    p0, sig = fitA["params"], fitA["value_sd"]
     E0 = fitA["value"]
     L = [f"Sweeps around fit A (E_A* = {E0:.4f}, sigma_E = {sig:.4f}); range of each parameter with "
          f"E_A <= E_A* + 2 sigma_E = {E0 + 2 * sig:.4f} (single evaluations, 10^4 animals each):"]
@@ -561,7 +561,7 @@ def tradeoff():
     """Near-optimal parameter sets of fit A: all evaluations (Suppl. trade-off figure) and the refined
     candidates within 2 sigma_E of the optimum (figure + Suppl. table of equivalent sets)."""
     best = json.loads((WORK / "fitA" / "best.json").read_text())
-    E0, sig = best["value"], best["refine"]["sigma_pooled"]
+    E0, sig = best["value"], best["value_sd"]
     with open(DATA / "fitA_evals.dat", "w") as f:
         f.write("# all ok evaluations of fit A (global + locals): " + " ".join(FREE_ORDER) + " E_A\n")
         for r in sorted(all_evals("fitA"), key=lambda r: -float(r["E_A"])):  # best last (drawn on top)
